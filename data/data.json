@@ -1,0 +1,1268 @@
+{
+  "pronosticos": [
+    {
+      "id": "cl03iq",
+      "nombre": "Pronósticos Bahía de Iquique",
+      "mapa_pronostico": "http://marejadas.uv.cl/images/SAM/dominios/CL03IQG.gif",
+      "mosaico_pronostico": "http://marejadas.uv.cl/images/SAM/mosaicos/CL03IQMO.png",
+      "markers": [
+        { "lat": -20.2167, "lng": -70.1345, "nombre": "Bahía Iquique" },
+        { "lat": -20.2167, "lng": -70.1345, "nombre": "Puerto Iquique" }
+      ],
+      "sectores": [
+        {
+          "id": "CL03IQN01",
+          "nombre": "Playa Colorado",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL03IQN01C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL03IQN01H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL03IQN01T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL03IQN01D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL03IQM.png"
+          }
+        },
+        {
+          "id": "CL03IQN02",
+          "nombre": "Puerto Iquique Exterior",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL03IQN02C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL03IQN02H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL03IQN02T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL03IQN02D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL03IQM.png"
+          }
+        },
+        {
+          "id": "CL03IQN03",
+          "nombre": "Punta Morro",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL03IQN03C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL03IQN03H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL03IQN03T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL03IQN03D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL03IQM.png"
+          }
+        },
+        {
+          "id": "CL03IQN04",
+          "nombre": "Playa Cavancha",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL03IQN04C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL03IQN04H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL03IQN04T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL03IQN04D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL03IQM.png"
+          }
+        },
+        {
+          "id": "CL03IQN05",
+          "nombre": "Playa Brava ",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL03IQN05C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL03IQN05H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL03IQN05T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/periodos/CL03IQN05T.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL03IQM.png"
+          }
+        },
+        {
+          "id": "CL03IQN06",
+          "nombre": "Playa Huayquique",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL03IQN06C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL03IQN06H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL03IQN06T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL03IQN06D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL03IQM.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cl04to",
+      "nombre": "Pronóstico Tocopilla",
+      "mapa_pronostico": "http://marejadas.uv.cl/images/SAM/dominios/CL04TOG.gif",
+      "mosaico_pronostico": "http://marejadas.uv.cl/images/SAM/mosaicos/CL04TOMO.png",
+      "markers": [
+        { "lat": -22.0933, "lng": -69.2131, "nombre": "Bahía Tocopilla" },
+        { "lat": -22.0933, "lng": -69.2131, "nombre": "Puerto Tocopilla" }
+      ],
+      "sectores": [
+        {
+          "id": "CL04TON01",
+          "nombre": "Playa Salitre",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL04TON01C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL04TON01H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL04TON01T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL04TON01D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL04TOM.png"
+          }
+        },
+        {
+          "id": "CL04TON02",
+          "nombre": "Caleta Tocopilla",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL04TON02C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL04TON02H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL04TON02T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL04TON02D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL04TOM.png"
+          }
+        },
+        {
+          "id": "CL04TON03",
+          "nombre": "Playa Covadonga",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL04TON03C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL04TON03H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL04TON03T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL04TON03D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL04TOM.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cl06mj",
+      "nombre": "Pronóstico Bahía de Mejillones",
+      "mapa_pronostico": "http://marejadas.uv.cl/images/SAM/dominios/CL06MJG.gif",
+      "mosaico_pronostico": "http://marejadas.uv.cl/images/SAM/mosaicos/CL06MJMO.png",
+      "markers": [
+        { "lat": -23.1333, "lng": -70.4167, "nombre": "Bahía Mejillones" },
+        { "lat": -23.1333, "lng": -70.4167, "nombre": "Puerto Mejillones" }
+      ],
+      "sectores": [
+        {
+          "id": "CL06MJN01",
+          "nombre": "Michilla",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL06MJN01C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL06MJN01H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL06MJN01T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL06MJN01D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL06MJM.png"
+          }
+        },
+        {
+          "id": "CL06MJN02",
+          "nombre": "Hornitos",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL06MJN02C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL06MJN02H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL06MJN02T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL06MJN02D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL06MJM.png"
+          }
+        },
+        {
+          "id": "CL06MJN03",
+          "nombre": "GNL Mejillones",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/mareas/CL06MJM.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL06MJN03H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL06MJN03T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL06MJN03D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL06MJM.png"
+          }
+        },
+        {
+          "id": "CL06MJN05",
+          "nombre": "Puerto Mejillones",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL06MJN05C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL06MJN05H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL06MJN05T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL06MJN05D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL06MJM.png"
+          }
+        },
+        {
+          "id": "CL06MJN04",
+          "nombre": "Puerto Angamos",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL06MJN04C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL06MJN04H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL06MJN04T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL06MJN04D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL06MJM.png"
+          }
+        },
+        {
+          "id": "CL06MJN06",
+          "nombre": "Terminal Pesquero Mejillones",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL06MJN06C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL06MJN06H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL06MJN06T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL06MJN06D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL06MJM.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cl06an",
+      "nombre": "PRONÓSTICO DE ANTOFAGASTA",
+      "mapa_pronostico": "http://marejadas.uv.cl/images/SAM/dominios/CL06ANG.gif",
+      "mosaico_pronostico": "http://marejadas.uv.cl/images/SAM/mosaicos/CL06ANMO.png",
+      "markers": [
+        { "lat": -23.1333, "lng": -70.4167, "nombre": "Juan López" },
+        { "lat": -23.1333, "lng": -70.4167, "nombre": "La Portada" },
+        { "lat": -23.1333, "lng": -70.4167, "nombre": "La Chimba" },
+        { "lat": -23.1333, "lng": -70.4167, "nombre": "Playa Trocadero" },
+        { "lat": -23.1333, "lng": -70.4167, "nombre": "La Choza" },
+        { "lat": -23.1333, "lng": -70.4167, "nombre": "Parque de los Eventos" },
+        { "lat": -23.1333, "lng": -70.4167, "nombre": "Playa Paraíso" },
+        { "lat": -23.1333, "lng": -70.4167, "nombre": "Puerto de Antofagasta" },
+        { "lat": -23.1333, "lng": -70.4167, "nombre": "Balneario Municipal" },
+        {
+          "lat": -23.1333,
+          "lng": -70.4167,
+          "nombre": "Estadio Militar los Héroes"
+        },
+        { "lat": -23.1333, "lng": -70.4167, "nombre": "Ex Camping Municipal" },
+        { "lat": -23.1333, "lng": -70.4167, "nombre": "Puerto Coloso" }
+      ],
+      "sectores": [
+        {
+          "id": "CL06ANN01",
+          "nombre": "Juan López",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL06ANN01C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL06ANN01H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL06ANN01T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL06ANN01D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL06MJM.png"
+          }
+        },
+        {
+          "id": "CL06ANN02",
+          "nombre": "La Portada",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL06ANN02C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL06ANN02H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL06ANN02T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL06ANN02D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL06MJM.png"
+          }
+        },
+        {
+          "id": "CL06ANN03",
+          "nombre": "La Chimba",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL06ANN03C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL06ANN03H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL06ANN03T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL06ANN03D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL06MJM.png"
+          }
+        },
+        {
+          "id": "CL06ANN04",
+          "nombre": "Playa Trocadero",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL06ANN04C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL06ANN04H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL06ANN04T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL06ANN04D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL06MJM.png"
+          }
+        },
+        {
+          "id": "CL06ANN05",
+          "nombre": "La Choza",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL06ANN05C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL06ANN05H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL06ANN05T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL06ANN05D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL06MJM.png"
+          }
+        },
+        {
+          "id": "CL06ANN06",
+          "nombre": "Parque de los Eventos",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL06ANN06C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL06ANN06H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL06ANN06T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL06ANN06D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL06MJM.png"
+          }
+        },
+        {
+          "id": "CL06ANN07",
+          "nombre": "Playa Paraíso",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL06ANN07C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL06ANN07H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL06ANN07T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL06ANN07D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL06MJM.png"
+          }
+        },
+        {
+          "id": "CL06ANN08",
+          "nombre": "Puerto de Antofagasta",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL06ANN08C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL06ANN08H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL06ANN08T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL06ANN08D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL06MJM.png"
+          }
+        },
+        {
+          "id": "CL06ANN09",
+          "nombre": "Balneario Municipal",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL06ANN9C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL06ANN9H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL06ANN9T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL06ANN9D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL06MJM.png"
+          }
+        },
+        {
+          "id": "CL06ANN10",
+          "nombre": "Estadio Militar los Héroes",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL06ANN10C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL06ANN10H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL06ANN10T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL06ANN10D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL06MJM.png"
+          }
+        },
+        {
+          "id": "CL06ANN11",
+          "nombre": "Ex Camping Municipal",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL06ANN11C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL06ANN11H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL06ANN11T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL06ANN11D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL06MJM.png"
+          }
+        },
+        {
+          "id": "CL06ANN12",
+          "nombre": "Puerto Coloso",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL06ANN12C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL06ANN12H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL06ANN12T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL06ANN12D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL06MJM.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cl12co",
+      "nombre": "PRONÓSTICO BAHÍA DE COQUIMBO",
+      "mapa_pronostico": "http://marejadas.uv.cl/images/SAM/dominios/CL12COG.gif",
+      "mosaico_pronostico": "http://marejadas.uv.cl/images/SAM/mosaicos/CL12COMO.png",
+      "markers": [
+        { "lat": 0, "lng": 0, "nombre": "Chañaral de Aceituno" },
+        { "lat": 0, "lng": 0, "nombre": "Punta Choros" },
+        { "lat": 0, "lng": 0, "nombre": "Caleta Totoralillo" },
+        { "lat": 0, "lng": 0, "nombre": "Caleta Hornos" },
+        { "lat": 0, "lng": 0, "nombre": "Punta Teatinos" },
+        { "lat": 0, "lng": 0, "nombre": "El Faro" },
+        { "lat": 0, "lng": 0, "nombre": "Playa cuatro esquinas" },
+        { "lat": 0, "lng": 0, "nombre": "Playa Peñuelas" },
+        { "lat": 0, "lng": 0, "nombre": "Puerto Coquimbo" },
+        { "lat": 0, "lng": 0, "nombre": "Costa sector Pampilla" },
+        { "lat": 0, "lng": 0, "nombre": "Puerto Guayacán" },
+        { "lat": 0, "lng": 0, "nombre": "Playa la Herradura" },
+        { "lat": 0, "lng": 0, "nombre": "Panul" }
+      ],
+      "sectores": [
+        {
+          "id": "cl12con01",
+          "nombre": "Chañaral de Aceituno",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL12CON01C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL12CON01H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL12CON01T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL12CON01D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL12COM.png"
+          }
+        },
+        {
+          "id": "cl12con02",
+          "nombre": "Punta Choros",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL12CON02C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL12CON02H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL12CON02T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL12CON02D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL12COM.png"
+          }
+        },
+        {
+          "id": "cl12con03",
+          "nombre": "Caleta Totoralillo",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL12CON03C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL12CON03H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL12CON03T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/periodos/CL12CON03T.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL12COM.png"
+          }
+        },
+        {
+          "id": "cl12con04",
+          "nombre": "Caleta Hornos",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL12CON04C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL12CON04H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL12CON04T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL12CON04D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL12COM.png"
+          }
+        },
+        {
+          "id": "cl12con05",
+          "nombre": "Punta Teatinos",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL12CON05C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL12CON05H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL12CON05T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL12CON05D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL12COM.png"
+          }
+        },
+        {
+          "id": "cl12con06",
+          "nombre": "El Faro",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL12CON06C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL12CON06H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/alturas/CL12CON06H.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL12CON06D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL12COM.png"
+          }
+        },
+        {
+          "id": "cl12con07",
+          "nombre": "Playa cuatro esquinas",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL12CON07C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL12CON07H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL12CON07T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL12CON07D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL12COM.png"
+          }
+        },
+        {
+          "id": "cl12con08",
+          "nombre": "Playa Peñuelas",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL12CON08C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL12CON08H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL12CON08T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL12CON08D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL12COM.png"
+          }
+        },
+        {
+          "id": "cl12con09",
+          "nombre": "Puerto Coquimbo",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL12CON09C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL12CON09H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL12CON09T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL12CON09D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL12COM.png"
+          }
+        },
+        {
+          "id": "cl12con10",
+          "nombre": "Costa sector Pampilla",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL12CON10C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL12CON10H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL12CON10T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL12CON10D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL12COM.png"
+          }
+        },
+        {
+          "id": "cl12con11",
+          "nombre": "Puerto Guayacán",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL12CON11C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/categorias/CL12CON11C.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL12CON11T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL12CON11D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL12COM.png"
+          }
+        },
+        {
+          "id": "cl12con12",
+          "nombre": "Playa la Herradura",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL12CON12C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/categorias/CL12CON12C.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL12CON12T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL12CON12D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL12COM.png"
+          }
+        },
+        {
+          "id": "cl12con13",
+          "nombre": "Panul",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL12CON13C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL12CON13H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL12CON13T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL12CON13D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL12COM.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cl12tg",
+      "nombre": "TONGOY",
+      "mapa_pronostico": "http://marejadas.uv.cl/images/SAM/dominios/CL12TGG.gif",
+      "mosaico_pronostico": "http://marejadas.uv.cl/images/SAM/mosaicos/CL12TGMO.png",
+      "markers": [
+        { "lat": 0, "lng": 0, "nombre": "Totoralillo" },
+        { "lat": 0, "lng": 0, "nombre": "Punta Morrillos" },
+        { "lat": 0, "lng": 0, "nombre": "Caleta de Guanaquero" },
+        { "lat": 0, "lng": 0, "nombre": "Bahía de Tongoy" },
+        { "lat": 0, "lng": 0, "nombre": "Caleta de Tongoy" },
+        { "lat": 0, "lng": 0, "nombre": "CEAZA" },
+        { "lat": 0, "lng": 0, "nombre": "Puerto Aldea" }
+      ],
+      "sectores": [
+        {
+          "id": "cl12tgn01",
+          "nombre": "Totoralillo",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL12TGN01C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/categorias/CL12TGN01C.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL12TGN01T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL12TGN01D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL12TGM.png"
+          }
+        },
+        {
+          "id": "cl12tgn02",
+          "nombre": "Punta Morrillos",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL12TGN02C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL12TGN02H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/alturas/CL12TGN02H.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL12TGN02D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL12TGM.png"
+          }
+        },
+        {
+          "id": "cl12tgn03",
+          "nombre": "Caleta de Guanaquero",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL12TGN03C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/categorias/CL12TGN03C.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL12TGN03T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL12TGN03D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL12TGM.png"
+          }
+        },
+        {
+          "id": "cl12tgn04",
+          "nombre": "Bahía de Tongoy",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL12TGN04C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL12TGN04H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL12TGN04T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL12TGN04D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL12TGM.png"
+          }
+        },
+        {
+          "id": "cl12tgn05",
+          "nombre": "Caleta de Tongoy",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL12TGN05C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL12TGN05H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL12TGN05T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL12TGN05D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL12TGM.png"
+          }
+        },
+        {
+          "id": "cl12tgn06",
+          "nombre": "CEAZA",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL12TGN06C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL12TGN06H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL12TGN06T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL12TGN06D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL12TGM.png"
+          }
+        },
+        {
+          "id": "cl12tgn07",
+          "nombre": "Puerto Aldea",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL12TGN07C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL12TGN07H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL12TGN07T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL12TGN07D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL12TGM.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cl46rn",
+      "nombre": "PRONÓSTICO DE RAPA NUI",
+      "mapa_pronostico": "http://marejadas.uv.cl/images/SAM/dominios/CL46RNG.gif",
+      "mosaico_pronostico": "http://marejadas.uv.cl/images/SAM/mosaicos/CL46RNMO.png",
+      "markers": [
+        { "lat": 0, "lng": 0, "nombre": "Hanga Roa" },
+        { "lat": 0, "lng": 0, "nombre": "Hanga Piko" },
+        { "lat": 0, "lng": 0, "nombre": "Motu Nui" },
+        { "lat": 0, "lng": 0, "nombre": "Hanga Vinapu" },
+        { "lat": 0, "lng": 0, "nombre": "Hanga Hotuiti" },
+        { "lat": 0, "lng": 0, "nombre": "Ovahe" },
+        { "lat": 0, "lng": 0, "nombre": "Anakena" }
+      ],
+      "sectores": [
+        {
+          "id": "CL46RNN01",
+          "nombre": "Hanga Roa",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL46RNN01C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL46RNN01H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL46RNN01T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL46RNN01D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL46RNM.png"
+          }
+        },
+        {
+          "id": "CL46RNN02",
+          "nombre": "Hanga Piko",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL46RNN02C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL46RNN02H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL46RNN02T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL46RNN02D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL46RNM.png"
+          }
+        },
+        {
+          "id": "CL46RNN03",
+          "nombre": "Motu Nui",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL46RNN03C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL46RNN03H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL46RNN03T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL46RNN03D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL46RNM.png"
+          }
+        },
+        {
+          "id": "CL46RNN04",
+          "nombre": "Hanga Vinapu",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL46RNN04C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL46RNN04H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL46RNN04T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL46RNN04D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL46RNM.png"
+          }
+        },
+        {
+          "id": "CL46RNN05",
+          "nombre": "Hanga Hotuiti",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL46RNN05C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL46RNN05H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL46RNN05T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL46RNN05D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL46RNM.png"
+          }
+        },
+        {
+          "id": "CL46RNN06",
+          "nombre": "Ovahe",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL46RNN06C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL46RNN06H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL46RNN06T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL46RNN06D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL46RNM.png"
+          }
+        },
+        {
+          "id": "CL46RNN07",
+          "nombre": "Anakena",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL46RNN07C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL46RNN07H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL46RNN07T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL46RNN07D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL46RNM.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cl15qt",
+      "nombre": "PRONÓSTICO BAHÍA DE QUINTERO",
+      "mapa_pronostico": "http://marejadas.uv.cl/images/SAM/dominios/CL15QTG.gif",
+      "mosaico_pronostico": "http://marejadas.uv.cl/images/SAM/mosaicos/CL15QTMO.png",
+      "markers": [
+        { "lat": 0, "lng": 0, "nombre": "" },
+        { "lat": 0, "lng": 0, "nombre": "" }
+      ],
+      "sectores": [
+        {
+          "id": "CL15QTN01",
+          "nombre": " Horcón",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL15QTN01C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL15QTN01H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL15QTN01T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL15QTN01D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL15QTM.png"
+          }
+        },
+        {
+          "id": "CL15QTN02",
+          "nombre": "El Tebo",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL15QTN02C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL15QTN02H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL15QTN02T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL15QTN02D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL15QTM.png"
+          }
+        },
+        {
+          "id": "CL15QTN03",
+          "nombre": "Puerto Ventanas",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL15QTN03C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL15QTN03H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL15QTN03T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL15QTN03D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL15QTM.png"
+          }
+        },
+        {
+          "id": "CL15QTN04",
+          "nombre": "Oxiquim",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL15QTN04C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL15QTN04H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL15QTN04T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL15QTN04D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL15QTM.png"
+          }
+        },
+        {
+          "id": "CL15QTN05",
+          "nombre": "Muelle GNL Quintero",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL15QTN05C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL15QTN05H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL15QTN05T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL15QTN05D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL15QTM.png"
+          }
+        },
+        {
+          "id": "CL15QTN06",
+          "nombre": "Playa Loncura",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL15QTN06C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL15QTN06H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL15QTN06T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL15QTN06D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL15QTM.png"
+          }
+        },
+        {
+          "id": "CL15QTN07",
+          "nombre": "Caleta Quintero",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL15QTN07C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL15QTN07H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL15QTN07T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL15QTN07D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL15QTM.png"
+          }
+        },
+        {
+          "id": "CL15QTN08",
+          "nombre": "Playa las Conchitas",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL15QTN08C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL15QTN08H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL15QTN08T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL15QTN08D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL15QTM.png"
+          }
+        },
+        {
+          "id": "CL15QTN09",
+          "nombre": "Cueva del Pirata",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL15QTN09C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL15QTN09H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL15QTN09T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL15QTN09D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL15QTM.png"
+          }
+        },
+        {
+          "id": "CL15QTN10",
+          "nombre": "Caleta Papagallo",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL15QTN10C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL15QTN10H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL15QTN10T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL15QTN10D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL15QTM.png"
+          }
+        },
+        {
+          "id": "CL15QTN11",
+          "nombre": "Monoboya ENAP",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL15QTN11C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL15QTN11H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL15QTN11T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL15QTN11D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL15QTM.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cl15cc",
+      "nombre": "BAHÍA DE CONCÓN",
+      "mapa_pronostico": "http://marejadas.uv.cl/images/SAM/dominios/CL15CCG.gif",
+      "mosaico_pronostico": "http://marejadas.uv.cl/images/SAM/mosaicos/CL15CCMO.png",
+      "markers": [
+        { "lat": 0, "lng": 0, "nombre": "" },
+        { "lat": 0, "lng": 0, "nombre": "" }
+      ],
+      "sectores": [
+        {
+          "id": "CL15CCN01",
+          "nombre": "Playa La Boca",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL15CCN01C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL15CCN01H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL15CCN01T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL15CCN01D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL15CCM.png"
+          }
+        },
+        {
+          "id": "CL15CCN02",
+          "nombre": "Caleta Higuerillas",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL15CCN02C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL15CCN02H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL15CCN02T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL15CCN02D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL15CCM.png"
+          }
+        },
+        {
+          "id": "CL15CCN03",
+          "nombre": "Punta Piqueros",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL15CCN03C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL15CCN03H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL15CCN03T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL15CCN03D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL15CCM.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cl15sa",
+      "nombre": "PRONÓSTICO DE SAN ANTONIO",
+      "mapa_pronostico": "http://marejadas.uv.cl/images/SAM/dominios/CL15SAG.gif",
+      "mosaico_pronostico": "http://marejadas.uv.cl/images/SAM/mosaicos/CL15SAMO.png",
+      "markers": [],
+      "sectores": [
+        {
+          "id": "CL15SAN01",
+          "nombre": "Av. Antonio Nuñez",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL15SAN01C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL15SAN01H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL15SAN01T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL15SAN01D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL15SAM.png"
+          }
+        },
+        {
+          "id": "CL15SAN02",
+          "nombre": "Puerto San Antonio",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL15SAN02C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL15SAN02H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL15SAN02T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL15SAN02D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL15SAM.png"
+          }
+        },
+        {
+          "id": "CL15SAN03",
+          "nombre": "Ampliación Puerto",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL15SAN03C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL15SAN03H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL15SAN03T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL15SAN03D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL15SAM.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cl19ta",
+      "nombre": "PRONÓSTICO DE TALCAHUANO",
+      "mapa_pronostico": "http://marejadas.uv.cl/images/SAM/dominios/CL19TAG.gif",
+      "mosaico_pronostico": "http://marejadas.uv.cl/images/SAM/mosaicos/CL19TAMO.png",
+      "markers": [
+        { "lat": 0, "lng": 0, "nombre": "" },
+        { "lat": 0, "lng": 0, "nombre": "" }
+      ],
+      "sectores": [
+        {
+          "id": "CL19TAN01",
+          "nombre": "Las Tejas",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL19TAN01C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL19TAN01H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL19TAN01T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL19TAN01D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL19TAM.png"
+          }
+        },
+        {
+          "id": "CL19TAN02",
+          "nombre": "Alto Perales",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL19TAN02C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL19TAN02H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL19TAN02T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL19TAN02D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL19TAM.png"
+          }
+        },
+        {
+          "id": "CL19TAN03",
+          "nombre": "Dichato",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL19TAN03C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL19TAN03H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL19TAN03T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL19TAN03D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL19TAM.png"
+          }
+        },
+        {
+          "id": "CL19TAN04",
+          "nombre": "Cacholgue",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL19TAN04C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL19TAN04H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL19TAN04T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL19TAN04D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL19TAM.png"
+          }
+        },
+        {
+          "id": "CL19TAN05",
+          "nombre": "Tomé",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL19TAN05C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL19TAN05H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL19TAN05T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL19TAN05D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL19TAM.png"
+          }
+        },
+        {
+          "id": "CL19TAN06",
+          "nombre": "Lirquen",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL19TAN06C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL19TAN06H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL19TAN06T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL19TAN06D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL19TAM.png"
+          }
+        },
+        {
+          "id": "CL19TAN07",
+          "nombre": "Astillero Asmar",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL19TAN07C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL19TAN07H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL19TAN07T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL19TAN07D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL19TAM.png"
+          }
+        },
+        {
+          "id": "CL19TAN08",
+          "nombre": "Isla Quiriquina",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL19TAN08C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL19TAN08H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL19TAN08T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL19TAN08D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL19TAM.png"
+          }
+        },
+        {
+          "id": "CL19TAN09",
+          "nombre": "Taiguen",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL19TAN09C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL19TAN09H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL19TAN09T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL19TAN09D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL19TAM.png"
+          }
+        },
+        {
+          "id": "CL19TAN10",
+          "nombre": "Litrinal",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL19TAN10C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL19TAN10H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL19TAN10T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL19TAN10D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL19TAM.png"
+          }
+        },
+        {
+          "id": "CL19TAN11",
+          "nombre": "San Vicente",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL19TAN11C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL19TAN11H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL19TAN11T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL19TAN11D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL19TAM.png"
+          }
+        },
+        {
+          "id": "CL19TAN12",
+          "nombre": "Caleta Lenga",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL19TAN12C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL19TAN12H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL19TAN12T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL19TAN12D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL19TAM.png"
+          }
+        },
+        {
+          "id": "CL19TAN13",
+          "nombre": "Península Hualpen",
+          "datos": {
+            "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL19TAN13C.png",
+            "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL19TAN13H.png",
+            "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL19TAN13T.png",
+            "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL19TAN13D.png",
+            "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL19TAM.png"
+          }
+        }
+      ]
+    }
+  ],
+  "acc": [
+    {
+      "id": "CL01AC",
+      "nombre": "Arica",
+      "lon": -72,
+      "lat": -19,
+      "norOeste": {
+        "id": "CL01ACNOO",
+        "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL01ACNOOC.png",
+        "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL01ACNOOH.png",
+        "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL01ACNOOT.png",
+        "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL01ACNOOD.png",
+        "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL01ARM.png"
+      },
+      "oeste": {
+        "id": "CL01ACOOO",
+        "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL01ACOOOC.png",
+        "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL01ACOOOH.png",
+        "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL01ACOOOT.png",
+        "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL01ACOOOD.png",
+        "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL01ARM.png"
+      },
+      "surOeste": {
+        "id": "CL01ACSOO",
+        "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL01ACSOOC.png",
+        "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL01ACSOOH.png",
+        "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL01ACSOOT.png",
+        "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL01ACSOOD.png",
+        "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL01ARM.png"
+      }
+    },
+    {
+      "id": "CL03AC",
+      "nombre": "Iquique",
+      "lon": -72,
+      "lat": -21,
+      "norOeste": {
+        "id": "CL03ACNOO",
+        "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL03ACNOOC.png",
+        "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL03ACNOOH.png",
+        "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL03ACNOOT.png",
+        "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL03ACNOOD.png",
+        "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL03IQM.png"
+      },
+      "oeste": {
+        "id": "CL03ACOOO",
+        "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL03ACOOOC.png",
+        "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL03ACOOOH.png",
+        "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL03ACOOOT.png",
+        "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL03ACOOOD.png",
+        "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL03IQM.png"
+      },
+      "surOeste": {
+        "id": "CL03ACSOO",
+        "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL03ACSOOC.png",
+        "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL03ACSOOH.png",
+        "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL03ACSOOT.png",
+        "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL03ACSOOD.png",
+        "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL03IQM.png"
+      }
+    },
+    {
+      "id": "CL04AC",
+      "nombre": "Tocopilla",
+      "lon": -72,
+      "lat": -22,
+      "norOeste": {
+        "id": "CL04ACNOO",
+        "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL04ACNOOC.png",
+        "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL04ACNOOH.png",
+        "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL04ACNOOT.png",
+        "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL04ACNOOD.png",
+        "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL04TOM.png"
+      },
+      "oeste": {
+        "id": "CL04ACOOO",
+        "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL04ACOOOC.png",
+        "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL04ACOOOH.png",
+        "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL04ACOOOT.png",
+        "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL04ACOOOD.png",
+        "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL04TOM.png"
+      },
+      "surOeste": {
+        "id": "CL04ACSOO",
+        "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL04ACSOOC.png",
+        "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL04ACSOOH.png",
+        "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL04ACSOOT.png",
+        "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL04ACSOOD.png",
+        "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL04TOM.png"
+      }
+    },
+    {
+      "id": "",
+      "nombre": "",
+      "lon": 0,
+      "lat": 0,
+      "norOeste": {
+        "id": "",
+        "categoria": "",
+        "altura": "",
+        "periodo": "",
+        "direccion": "",
+        "marea": ""
+      },
+      "oeste": {
+        "id": "",
+        "categoria": "",
+        "altura": "",
+        "periodo": "",
+        "direccion": "",
+        "marea": ""
+      },
+      "surOeste": {
+        "id": "",
+        "categoria": "",
+        "altura": "",
+        "periodo": "",
+        "direccion": "",
+        "marea": ""
+      }
+    }
+  ],
+  "po": [
+    {
+      "id": "CL01",
+      "nombre": "Arica",
+      "lat": -19,
+      "lon": -75,
+      "datosPronostico": {
+        "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL01C.png",
+        "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL01H.png",
+        "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL01T.png",
+        "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL01D.png",
+        "espectro": "http://marejadas.uv.cl/images/SAM/Espectros/NID_045.gif"
+      }
+    },
+    {
+      "id": "CL03",
+      "nombre": "Iquique",
+      "lat": -21,
+      "lon": -72,
+      "datosPronostico": {
+        "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL03C.png",
+        "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL03H.png",
+        "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL03T.png",
+        "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL03D.png",
+        "espectro": "http://marejadas.uv.cl/images/SAM/Espectros/NID_043.gif"
+      }
+    },
+    {
+      "id": "CL04",
+      "nombre": "Tocopilla",
+      "lat": -22,
+      "lon": -72,
+      "datosPronostico": {
+        "categoria": "http://marejadas.uv.cl/images/SAM/categorias/CL04C.png",
+        "altura": "http://marejadas.uv.cl/images/SAM/alturas/CL04H.png",
+        "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL04T.png",
+        "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL04D.png",
+        "espectro": "http://marejadas.uv.cl/images/SAM/Espectros/NID_042.gif"
+      }
+    },
+    {
+      "id": "",
+      "nombre": "",
+      "lat": 0,
+      "lon": 0,
+      "datosPronostico": {
+        "categoria": "",
+        "altura": "",
+        "periodo": "",
+        "direccion": "",
+        "espectro": ""
+      }
+    }
+  ]
+}
