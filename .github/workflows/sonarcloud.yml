@@ -23,13 +23,5 @@ jobs:
         uses: SonarSource/sonarcloud-github-action@v2
         with:
           projectBaseDir: .
-          args: >
-            -Dsonar.projectKey=marejadasuvApp
-            -Dsonar.organization=marejadasuv
-            -Dsonar.host.url=https://sonarcloud.io
-            -Dsonar.sources=src
-            -Dsonar.tests=src
-            -Dsonar.inclusions=**/*.test.js,**/*.spec.js
-            -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
