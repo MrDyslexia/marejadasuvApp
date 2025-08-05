@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - main
-      - backend
   pull_request:
     types: [opened, synchronize, reopened]
 
@@ -13,12 +12,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v3
+      # Install Bun (instead of Node.js if Bun is your primary runtime)
+      - uses: oven-sh/setup-bun@v1
         with:
-          node-version: 18
+          bun-version: latest  # or specify a version like "1.0.0"
 
-      - run: npm ci
+      # Install dependencies (Bun equivalent of `npm ci`)
+      - run: bun install --frozen-lockfile
 
+      # Run SonarCloud Scan
       - name: Run SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@v2
         with:
