@@ -66,7 +66,7 @@ const Home = () => {
           </Text>
           <FeatureCard
             title="Pronóstico Oceánico"
-            description="Acá encontrarás el pronóstico de oleaje para los próximos 7 días en el Océano Pacífico y las principales ciudades costeras de Chile. Este pronóstico indica el comportamiento esperado en la zona oceánica (lejos de la costa), y puede dar una idea del oleaje esperado en la costa, que dependerá de la orientación de ésta y la dirección de llegada del oleaje. Si quieres conocer el detalle costero recomendamos buscar los pronósticos por bahía en el menú superior."
+            description="Acá encontrarás el pronóstico de oleaje para los próximos 7 días en el Océano Pacífico y las principales ciudades costeras de Chile. Este pronóstico indica el comportamiento esperado en la zona oceánica (lejos de la costa), y puede dar una idea del oleaje esperado en la costa, que dependerá de la orientación de ésta y la dirección de llegada del oleaje."
             icon="ChartSpline"
             gradient={["#26A69A", "#00796B"]}
             onPress={() => router.push("/po")}
@@ -80,7 +80,7 @@ const Home = () => {
           />
           <FeatureCard
             title="Pronóstico General"
-            description="Acá encontrarás el pronóstico de oleaje para los próximos 7 días en los principales bahías. Este pronóstico se estima a una profundidad de 20 [m] e indica como será el comportamiento del oleaje en la costa."
+            description="Aquí encontrarás el pronóstico de oleaje para los próximos 7 días en las principales bahías. Este pronóstico, calculado a una profundidad de 20 metros, indica cómo será el comportamiento del oleaje en la costa."
             icon="Waves"
             gradient={["#FF7043", "#F4511E"]}
             onPress={ () => router.push("/pg") }

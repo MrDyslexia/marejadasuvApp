@@ -1264,5 +1264,99 @@
         "espectro": ""
       }
     }
-  ]
+  ],
+  "categorias":{
+    "folletos":[
+      {
+        "id": "1",
+        "nombre": "Categorías de marejadas",
+        "imagenes": [
+          {
+            "id": "general",
+            "url": "http://marejadas.uv.cl/images/SAM_new/Folleto/FolletoI.png",
+            "descripcion": "Categoria de marejadas descripción general"
+          },
+          {
+            "id": "M1",
+            "url": "http://marejadas.uv.cl/images/SAM_new/Folleto/M1.png",
+            "descripcion": "Categoría M1: Marejada débil"
+          },
+          {
+            "id": "M3",
+            "url": "http://marejadas.uv.cl/images/SAM_new/Folleto/M3.png",
+            "descripcion": "Categoría M3: Marejada fuerte"
+          },
+          {
+            "id": "M5",
+            "url": "http://marejadas.uv.cl/images/SAM_new/Folleto/M5.png",
+            "descripcion": "Categoría M5: Marejada muy fuerte"
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "descripcion": "Aplicación de paseos costeros",
+        "imagenes": [
+          {
+            "id": "a paseos costeros",
+            "url": "http://marejadas.uv.cl/images/SAM_new/Folleto/FolletoII.png",
+            "descripcion": "Aplicación de paseos costeros"
+          },
+          {
+            "id": "a playas",
+            "url": "http://marejadas.uv.cl/images/SAM_new/Folleto/FolletoIII.png",
+            "descripcion": "Aplicación a playas"
+          }
+        ]
+      }
+    ],
+    "videos": [
+      {
+        "id": "1",
+        "nombre": "Oleaje normal",
+        "url": "http://marejadas.uv.cl/images/SAM_new/gif_cat/N V2.gif",
+        "descripcion": "Condición más frecuente en un sector.",
+        "limitante": "Es posible desarrollar actividades costeras y marítimas habituales."
+      },
+      {
+        "id": "2",
+        "nombre": "Oleaje Normal +",
+        "url": "http://marejadas.uv.cl/images/SAM_new/gif_cat/N+ V2.gif",
+        "descripcion": "Condición de oleaje más fuerte de lo normal, pero menor que una marejada.",
+        "limitante": "Actividades habituales en mar se desarrollan con dificultad."
+      },
+      {
+        "id": "3",
+        "nombre": "Marejadas M1",
+        "url": "http://marejadas.uv.cl/images/SAM_new/gif_cat/M1 V2.gif",
+        "descripcion": "Oleaje intenso con el cual el agua sale de sus márgenes habituales en playa y puede mojar zonas que en general están secas.\n Se forman corrientes de gran intensidad.",
+        "limitante": "Actividades habituales en el mar no son posibles."
+      },
+      {
+        "id": "4",
+        "nombre": "Marejadas M2",
+        "url": "http://marejadas.uv.cl/images/SAM_new/gif_cat/M2 V3.gif",
+        "descripcion": "Oleaje capaz de alcanzar con frecuencia la zona de descanso de la playa, y algunas veces supera las estructuras costeras que no tienen playa.\n Algunas veces cubre la playa por completo, desplazando elementos pequeños, inundando parcialmente algunas edificaciones y/o formando pequeños escarpes o erosión que no es notoria a simple vista.",
+        "limitante": "No es posible el desarrollo de actividades en el borde costero."
+      },
+      {
+        "id": "5",
+        "nombre": "Marejadas M3",
+        "url": "http://marejadas.uv.cl/images/SAM_new/gif_cat/M5 V2.gif",
+        "descripcion": "Oleaje que produce sobrepaso abundante en playas y paseos costeros, iniciando algunos daños.\n El agua cubre toda la playa, desplazando elementos grandes y los pequeños son arrastrados al mar.\nSe produce una erosión significativa dentro del comportamiento habitual.\nEdificaciones costeras se inundan con frecuencia, se produce el colapso de edificaciones provisorias en zona erosionada."
+      },
+      {
+        "id": "6",
+        "nombre": "Marejadas M4",
+        "url": "http://marejadas.uv.cl/images/SAM_new/gif_cat/M4 V3.gif",
+        "descripcion": "Se forman flujos de agua que pueden mover mobiliario.\n En Playas se observa una erosión mayor a un año normal. Se produce el colapso de edificaciones en zona erosionada.\n En paseos costeros, se inundan propiedades y se desplazan elementos medianos.\n Estructuras costeras sufren daños importantes."
+      },
+      {
+        "id": "7",
+        "nombre": "Marejadas M5",
+        "url": "http://marejadas.uv.cl/images/SAM_new/gif_cat/M5 V2.gif",
+        "descripcion": "Condición en la que la evacuación de la costa es necesaria.\nEstructuras son severamente dañadas o destruidas.\nsobrepaso persistente genera flujos en paseos y calles.\ndaño importante o destrucción en propiedades."
+      }
+    ]
+  }
 }

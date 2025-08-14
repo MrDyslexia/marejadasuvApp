@@ -1,5 +1,5 @@
 import { StyleSheet, View } from "react-native"
-import PronosticoOceanico from "@/components/PoDataView"
+import PronosticoOceanico from "@/components/Po/PoDataView"
 import type { Region } from "@/types/type"
 import {po} from "@/data/data.json"
 export default function PronosticoOseanicoScreen() {
