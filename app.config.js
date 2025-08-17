@@ -43,12 +43,14 @@ export default ({ config }) => ({
         },
       },
     ],
+    [
+        "expo-video",
+        {
+          "supportsBackgroundPlayback": true,
+          "supportsPictureInPicture": true
+        }
+      ],
     "expo-router",
-    "expo-video",
-    {
-      supportsBackgroundPlayback: true,
-      supportsPictureInPicture: true,
-    },
     [
       "expo-splash-screen",
       {

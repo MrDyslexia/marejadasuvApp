@@ -10,7 +10,7 @@ import { Image } from "expo-image";
 import { useState } from "react";
 import { Acc } from "@/types/type";
 import { router } from "expo-router";
-import { Building, Expand } from "lucide-react-native";
+import { Expand } from "lucide-react-native";
 const ImageViewer = ({ acc }: { acc: Acc }) => {
   const [direction, setDirection] = useState<Direction>("oeste");
   const [attribute, setAttribute] = useState<Attribute>("categoria");
