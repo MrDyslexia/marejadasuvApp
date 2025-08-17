@@ -12,6 +12,7 @@ import {
 } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { Ionicons } from "@expo/vector-icons";
+import * as FileSystem from "expo-file-system";
 import data from "@/data/data.json";
 import { useEffect, useRef, useState } from "react";
 
@@ -25,7 +26,11 @@ export default function VideosScreen({ onBack }: VideosScreenProps) {
 
   /* Estado de carga */
   const [loading, setLoading] = useState(true);
+  const [progress, setProgress] = useState(0); // << progreso
   const contentAnim = useRef(new Animated.Value(0)).current;
+
+  /* Almacenamos las rutas locales */
+  const [cachedUris, setCachedUris] = useState<{ [key: string]: string }>({});
 
   useEffect(() => {
     Animated.timing(fadeAnim, {
@@ -34,17 +39,47 @@ export default function VideosScreen({ onBack }: VideosScreenProps) {
       useNativeDriver: true,
     }).start();
 
-    // Simulamos carga inicial
-    const timer = setTimeout(() => {
+    const cacheGifs = async () => {
+      const uris: { [key: string]: string } = {};
+      let completed = 0;
+
+      for (const video of videos) {
+        try {
+          // nombre único para el archivo
+          const filename = video.id + ".gif";
+          const fileUri = FileSystem.cacheDirectory + filename;
+
+          // verificar si existe
+          const info = await FileSystem.getInfoAsync(fileUri);
+
+          if (!info.exists) {
+            // descargar
+            await FileSystem.downloadAsync(video.url, fileUri);
+          }
+
+          // usar siempre el local
+          uris[video.id] = fileUri;
+        } catch (err) {
+          console.error("Error cacheando gif:", video.url, err);
+          uris[video.id] = video.url; // fallback al remoto
+        }
+
+        // actualizar progreso
+        completed++;
+        setProgress(Math.round((completed / videos.length) * 100));
+      }
+
+      setCachedUris(uris);
+
       setLoading(false);
       Animated.timing(contentAnim, {
         toValue: 1,
         duration: 500,
         useNativeDriver: true,
       }).start();
-    }, 1200);
+    };
 
-    return () => clearTimeout(timer);
+    cacheGifs();
   }, []);
 
   return (
@@ -78,7 +113,12 @@ export default function VideosScreen({ onBack }: VideosScreenProps) {
       {loading ? (
         <View style={styles.loaderContainer}>
           <ActivityIndicator size="large" color="#2196F3" />
-          <Text style={styles.loaderText}>Cargando contenido...</Text>
+          <Text style={styles.loaderText}>
+            Descargando contenido... {progress}%
+          </Text>
+          <Text style={styles.loaderSubText}>
+            {progress}% ({Math.round((progress / 100) * videos.length)} de {videos.length})
+          </Text>
         </View>
       ) : (
         <Animated.View style={{ flex: 1, opacity: contentAnim }}>
@@ -97,14 +137,16 @@ export default function VideosScreen({ onBack }: VideosScreenProps) {
 
                 <View style={styles.mediaContainer}>
                   <Image
-                    source={{ uri: video.url }}
+                    source={{ uri: cachedUris[video.id] }}
                     style={styles.videoGif}
                     accessibilityLabel={video.descripcion}
                   />
                 </View>
 
                 <View style={styles.cardContent}>
-                  <Text style={styles.videoDescription}>{video.descripcion}</Text>
+                  <Text style={styles.videoDescription}>
+                    {video.descripcion}
+                  </Text>
                   {video.limitante && (
                     <View style={styles.limitanteContainer}>
                       <Text style={styles.limitanteLabel}>Limitante:</Text>
@@ -172,6 +214,12 @@ const styles = StyleSheet.create({
   loaderText: {
     marginTop: 10,
     fontSize: 14,
+    fontWeight: "600",
+    color: "#374151",
+  },
+  loaderSubText: {
+    marginTop: 4,
+    fontSize: 13,
     color: "#6b7280",
   },
 
