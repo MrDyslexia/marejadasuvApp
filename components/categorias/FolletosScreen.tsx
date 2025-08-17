@@ -11,278 +11,189 @@ import {
   SafeAreaView,
   StatusBar,
   ActivityIndicator,
+  Animated,
 } from "react-native";
+import { LinearGradient } from "expo-linear-gradient";
+import { Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import data from "@/data/data.json";
 
 const { width } = Dimensions.get("window");
 
-type FolletosScreenProps = {
-  onBack: () => void;
-};
+type FolletosScreenProps = { onBack: () => void };
 
 export default function FolletosScreen({ onBack }: FolletosScreenProps) {
   const { folletos } = data.categorias;
-  const [loadingImages, setLoadingImages] = useState<{
-    [key: string]: boolean;
-  }>({});
+  const [loadingImages, setLoadingImages] = useState<{ [key: string]: boolean }>({});
 
-  const handleImageLoadStart = (imageId: string) => {
-    setLoadingImages((prev) => ({ ...prev, [imageId]: true }));
-  };
+  /* header animation */
+  const fadeAnim = useRef(new Animated.Value(0)).current;
+  useEffect(() => {
+    Animated.timing(fadeAnim, { toValue: 1, duration: 400, useNativeDriver: true }).start();
+  }, []);
 
-  const handleImageLoadEnd = (imageId: string) => {
-    setLoadingImages((prev) => ({ ...prev, [imageId]: false }));
-  };
-  const expand = (currentImage: string) => {
-    router.push({
-      pathname: "/img_expand",
-      params: { expandedImage: currentImage },
-    });
-  };
+  const handleImageLoadStart = (id: string) => setLoadingImages(p => ({ ...p, [id]: true }));
+  const handleImageLoadEnd = (id: string) => setLoadingImages(p => ({ ...p, [id]: false }));
+
+  const expand = (url: string) => router.push({ pathname: "/img_expand", params: { expandedImage: url } });
+
   return (
     <SafeAreaView style={styles.safeArea}>
-      <StatusBar barStyle="dark-content" backgroundColor="#ffffff" />
-      <View style={styles.container}>
-        <View style={styles.headerContainer}>
-          <TouchableOpacity
-            onPress={onBack}
-            style={styles.backButton}
-            accessibilityRole="button"
-            accessibilityLabel="Volver a la pantalla anterior"
-            accessibilityHint="Toca para regresar"
-            hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
-          >
-            <Text style={styles.backButtonText}>← Volver</Text>
-          </TouchableOpacity>
-          <Text style={styles.header} accessibilityRole="header">
-            Folletos
-          </Text>
-        </View>
-
-        <View style={styles.counterContainer}>
-          <Text style={styles.counterText}>
-            {folletos.length}{" "}
-            {folletos.length === 1
-              ? "folleto disponible"
-              : "folletos disponibles"}
-          </Text>
-        </View>
-
-        <ScrollView
-          style={styles.scrollView}
-          contentContainerStyle={styles.scrollContent}
-          showsVerticalScrollIndicator={false}
-          accessibilityLabel="Lista de folletos"
+      <StatusBar barStyle="dark-content" backgroundColor="#fff" />
+      {/* HEADER REDISEÑADO */}
+      <Animated.View style={{ opacity: fadeAnim }}>
+        <LinearGradient
+          colors={["#ffffff", "#f8fafc"]}
+          start={{ x: 0, y: 0 }}
+          end={{ x: 0, y: 1 }}
+          style={styles.headerGradient}
         >
-          {folletos.map((folleto, index) => (
-            <View
-              key={folleto.id}
-              style={styles.itemContainer}
-              accessibilityLabel={`Folleto ${index + 1} de ${
-                folletos.length
-              }: ${folleto.nombre || folleto.descripcion}`}
-            >
-              <Text style={styles.itemName} accessibilityRole="header">
-                {folleto.nombre || folleto.descripcion}
-              </Text>
+          <View style={styles.headerTop}>
+            <TouchableOpacity onPress={onBack} style={styles.backButton}>
+              <Ionicons name="chevron-back" size={24} color="#2196F3" />
+            </TouchableOpacity>
 
-              <View style={styles.imagesContainer}>
-                {folleto.imagenes.map((imagen, imageIndex) => (
-                  <View
-                    key={imagen.id}
-                    style={styles.imageWrapper}
-                    accessibilityRole="image"
-                  >
+            <View style={styles.titleGroup}>
+              <Text style={styles.headerTitle}>Folletos</Text>
+              <Text style={styles.headerCounter}>
+                {folletos.length} {folletos.length === 1 ? "folleto" : "folletos"} disponibles
+              </Text>
+            </View>
+          </View>
+        </LinearGradient>
+      </Animated.View>
+
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={styles.scrollContent}
+      >
+        {folletos.map((folleto, idx) => (
+          <View key={folleto.id} style={styles.itemContainer}>
+            <Text style={styles.itemName}>{folleto.nombre || folleto.descripcion}</Text>
+
+            <View style={styles.imagesContainer}>
+              {folleto.imagenes.map(img => (
+                <View key={img.id} style={styles.imageWrapper}>
+                  <TouchableOpacity onPress={() => expand(img.url)}>
                     <View style={styles.imageContainer}>
-                      <TouchableOpacity onPress={() => { expand(imagen.url) }}>
-                        <Image
-                          source={{ uri: imagen.url }}
-                          style={styles.image}
-                          accessibilityLabel={`Imagen ${imageIndex + 1}: ${
-                            imagen.descripcion
-                          }`}
-                          accessibilityHint="Imagen del folleto"
-                          onLoadStart={() => handleImageLoadStart(imagen.id)}
-                          onLoadEnd={() => handleImageLoadEnd(imagen.id)}
-                          onError={() => handleImageLoadEnd(imagen.id)}
-                        />
-                        {loadingImages[imagen.id] && (
-                          <View style={styles.loadingOverlay}>
-                            <ActivityIndicator size="small" color="#6366f1" />
-                          </View>
-                        )}
-                      </TouchableOpacity>
+                      <Image
+                        source={{ uri: img.url }}
+                        style={styles.image}
+                        onLoadStart={() => handleImageLoadStart(img.id)}
+                        onLoadEnd={() => handleImageLoadEnd(img.id)}
+                        onError={() => handleImageLoadEnd(img.id)}
+                      />
+                      {loadingImages[img.id] && (
+                        <View style={styles.loadingOverlay}>
+                          <ActivityIndicator size="small" color="#6366f1" />
+                        </View>
+                      )}
                     </View>
-                    <Text
-                      style={styles.imageDescription}
-                      accessibilityLabel={`Descripción: ${imagen.descripcion}`}
-                    >
-                      {imagen.descripcion}
-                    </Text>
-                  </View>
-                ))}
-              </View>
+                  </TouchableOpacity>
+                  <Text style={styles.imageDescription}>{img.descripcion}</Text>
+                </View>
+              ))}
             </View>
-          ))}
+          </View>
+        ))}
 
-          {folletos.length === 0 && (
-            <View style={styles.emptyState}>
-              <Text style={styles.emptyStateText}>
-                No hay folletos disponibles
-              </Text>
-              <Text style={styles.emptyStateSubtext}>
-                Los folletos aparecerán aquí cuando estén disponibles
-              </Text>
-            </View>
-          )}
-        </ScrollView>
-      </View>
+        {!folletos.length && (
+          <View style={styles.emptyState}>
+            <Text style={styles.emptyStateText}>No hay folletos disponibles</Text>
+          </View>
+        )}
+      </ScrollView>
     </SafeAreaView>
   );
 }
 
+/* ---------- Estilos ---------- */
 const styles = StyleSheet.create({
-  safeArea: {
-    flex: 1,
-    backgroundColor: "#ffffff",
+  safeArea: { flex: 1, backgroundColor: "#f8fafc" },
+
+  /* header */
+  headerGradient: {
+    borderBottomLeftRadius: 28,
+    borderBottomRightRadius: 28,
+    paddingTop: 12,
+    paddingBottom: 24,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 6 },
+    shadowOpacity: 0.06,
+    shadowRadius: 8,
+    elevation: 5,
   },
-  container: {
-    flex: 1,
-    backgroundColor: "#f8fafc",
-  },
-  headerContainer: {
+  headerTop: {
     flexDirection: "row",
     alignItems: "center",
     paddingHorizontal: 20,
-    paddingVertical: 16,
-    backgroundColor: "#ffffff",
-    borderBottomWidth: 1,
-    borderBottomColor: "#e2e8f0",
-    elevation: 2,
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.05,
-    shadowRadius: 2,
+    paddingTop: 10,
   },
   backButton: {
-    paddingVertical: 8,
-    paddingHorizontal: 12,
-    borderRadius: 8,
-    backgroundColor: "#f1f5f9",
-    marginRight: 16,
-    minWidth: 44,
-    minHeight: 44,
-    justifyContent: "center",
-    alignItems: "center",
+    marginRight: 12,
+    padding: 8,
+    backgroundColor: "rgba(5, 121, 150, 0.12)",
+    borderRadius: 20,
   },
-  backButtonText: {
-    fontSize: 16,
-    fontWeight: "600",
-    color: "#6366f1",
-  },
-  header: {
+  titleGroup: { flex: 1 },
+  headerTitle: {
     fontSize: 24,
     fontWeight: "700",
-    color: "#1e293b",
-    flex: 1,
+    color: "#111827",
+    marginBottom: 2,
   },
-  counterContainer: {
-    paddingHorizontal: 20,
-    paddingVertical: 12,
-    backgroundColor: "#ffffff",
-  },
-  counterText: {
+  headerCounter: {
     fontSize: 14,
-    color: "#64748b",
-    fontWeight: "500",
+    color: "#6b7280",
   },
-  scrollView: {
-    flex: 1,
-  },
-  scrollContent: {
-    padding: 20,
-    paddingBottom: 40,
-  },
+
+  /* contenido */
+  scrollContent: { padding: 20, paddingBottom: 40 },
   itemContainer: {
     marginBottom: 24,
-    backgroundColor: "#ffffff",
+    backgroundColor: "#fff",
     borderRadius: 16,
-    padding: 20,
+    padding: 16,
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.08,
+    shadowOpacity: 0.05,
     shadowRadius: 8,
-    elevation: 4,
-    borderWidth: 1,
-    borderColor: "#f1f5f9",
+    elevation: 3,
   },
   itemName: {
-    fontSize: 20,
-    fontWeight: "700",
-    marginBottom: 16,
+    fontSize: 18,
+    fontWeight: "600",
     color: "#1e293b",
-    lineHeight: 28,
+    marginBottom: 12,
   },
   imagesContainer: {
     flexDirection: "row",
     flexWrap: "wrap",
-    justifyContent: "space-between",
     gap: 12,
   },
-  imageWrapper: {
-    width: (width - 64) / 2, // Account for container padding and gap
-    marginBottom: 16,
-  },
+  imageWrapper: { width: (width - 64) / 2 },
   imageContainer: {
-    position: "relative",
     borderRadius: 12,
     overflow: "hidden",
-    backgroundColor: "#f8fafc",
+    backgroundColor: "#f3f4f6",
   },
-  image: {
-    width: "100%",
-    height: 160,
-    resizeMode: "cover",
-    borderRadius: 12,
-  },
+  image: { width: "100%", height: 160, borderRadius: 12 },
   loadingOverlay: {
-    position: "absolute",
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    backgroundColor: "rgba(248, 250, 252, 0.8)",
+    ...StyleSheet.absoluteFillObject,
+    backgroundColor: "rgba(248,250,252,0.8)",
     justifyContent: "center",
     alignItems: "center",
-    borderRadius: 12,
   },
   imageDescription: {
-    fontSize: 14,
+    fontSize: 13,
+    color: "#4b5563",
     textAlign: "center",
-    marginTop: 8,
-    color: "#64748b",
-    lineHeight: 20,
-    fontWeight: "500",
+    marginTop: 6,
   },
   emptyState: {
-    flex: 1,
-    justifyContent: "center",
     alignItems: "center",
     paddingVertical: 60,
   },
-  emptyStateText: {
-    fontSize: 18,
-    fontWeight: "600",
-    color: "#64748b",
-    marginBottom: 8,
-    textAlign: "center",
-  },
-  emptyStateSubtext: {
-    fontSize: 14,
-    color: "#94a3b8",
-    textAlign: "center",
-    lineHeight: 20,
-  },
+  emptyStateText: { fontSize: 16, color: "#9ca3af" },
 });
