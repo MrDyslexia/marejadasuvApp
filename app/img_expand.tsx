@@ -1,66 +1,40 @@
-import { StyleSheet, TouchableOpacity, View, Dimensions } from "react-native";
-import { Gesture, GestureDetector } from "react-native-gesture-handler";
-import Animated, {
-  useAnimatedStyle,
-  useSharedValue,
-  withTiming,
-} from "react-native-reanimated";
+import { StyleSheet, TouchableOpacity, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { router, useLocalSearchParams } from "expo-router";
 import { SafeAreaView } from "react-native-safe-area-context";
-
-const { width, height } = Dimensions.get("window");
+import Animated, {
+  useSharedValue,
+  useAnimatedStyle,
+  withTiming,
+} from "react-native-reanimated";
+import {
+  Gesture,
+  GestureDetector,
+} from "react-native-gesture-handler";
 
 const Img_expand = () => {
   const { expandedImage } = useLocalSearchParams();
   if (!expandedImage) return null;
 
-  // Valores animados para el zoom y pan
   const scale = useSharedValue(1);
   const savedScale = useSharedValue(1);
-  const translateX = useSharedValue(0);
-  const translateY = useSharedValue(0);
-  const savedTranslateX = useSharedValue(0);
-  const savedTranslateY = useSharedValue(0);
 
-  // Gestos
+  // Gesture: Zoom con pinza
   const pinchGesture = Gesture.Pinch()
-    .onUpdate((e) => {
-      scale.value = savedScale.value * e.scale;
+    .onUpdate((event) => {
+      scale.value = savedScale.value * event.scale;
     })
     .onEnd(() => {
       savedScale.value = scale.value;
-      // Resetear si el zoom es menor a 1
-      if (scale.value < 1) {
-        scale.value = withTiming(1);
-        savedScale.value = 1;
-        translateX.value = withTiming(0);
-        translateY.value = withTiming(0);
-        savedTranslateX.value = 0;
-        savedTranslateY.value = 0;
-      }
     });
 
-  const panGesture = Gesture.Pan()
-    .onUpdate((e) => {
-      translateX.value = savedTranslateX.value + e.translationX;
-      translateY.value = savedTranslateY.value + e.translationY;
-    })
-    .onEnd(() => {
-      savedTranslateX.value = translateX.value;
-      savedTranslateY.value = translateY.value;
-    });
-
+  // Gesture: Doble tap -> zoom x2 / reset
   const doubleTapGesture = Gesture.Tap()
     .numberOfTaps(2)
     .onEnd(() => {
-      if (scale.value !== 1) {
+      if (scale.value > 1) {
         scale.value = withTiming(1);
         savedScale.value = 1;
-        translateX.value = withTiming(0);
-        translateY.value = withTiming(0);
-        savedTranslateX.value = 0;
-        savedTranslateY.value = 0;
       } else {
         scale.value = withTiming(2);
         savedScale.value = 2;
@@ -68,17 +42,8 @@ const Img_expand = () => {
     });
 
   const animatedStyle = useAnimatedStyle(() => ({
-    transform: [
-      { translateX: translateX.value },
-      { translateY: translateY.value },
-      { scale: scale.value },
-    ],
+    transform: [{ scale: scale.value }],
   }));
-
-  const composedGesture = Gesture.Simultaneous(
-    Gesture.Simultaneous(pinchGesture, panGesture),
-    doubleTapGesture
-  );
 
   const close_back = () => {
     router.back();
@@ -87,18 +52,17 @@ const Img_expand = () => {
   return (
     <View style={styles.modalContainer}>
       <SafeAreaView style={styles.modalContainer}>
-        <GestureDetector gesture={composedGesture}>
-          <Animated.View style={[styles.imageContainer, animatedStyle]}>
-            <Animated.Image
-              style={styles.expandedImage}
-              source={{ uri: Array.isArray(expandedImage) ? expandedImage[0] : expandedImage || "" }}
-              resizeMode="contain"
-            />
-          </Animated.View>
+        <GestureDetector gesture={Gesture.Exclusive(doubleTapGesture, pinchGesture)}>
+          <Animated.Image
+            style={[styles.expandedImage, animatedStyle]}
+            source={{ uri: Array.isArray(expandedImage) ? expandedImage[0] ?? "" : expandedImage || "" }}
+            resizeMode="contain"
+          />
         </GestureDetector>
+
         <TouchableOpacity
           style={styles.closeExpandedButton}
-          onPress={() => close_back()}
+          onPress={close_back}
         >
           <Ionicons name="close" size={30} color="#fff" />
         </TouchableOpacity>
@@ -111,14 +75,6 @@ const styles = StyleSheet.create({
   modalContainer: {
     flex: 1,
     backgroundColor: "black",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  imageContainer: {
-    width: "100%",
-    height: "100%",
-    justifyContent: "center",
-    alignItems: "center",
   },
   expandedImage: {
     width: "100%",
@@ -131,7 +87,6 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(0,0,0,0.5)",
     borderRadius: 20,
     padding: 5,
-    zIndex: 1,
   },
 });
 
