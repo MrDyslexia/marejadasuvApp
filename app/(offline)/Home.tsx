@@ -8,27 +8,20 @@ import {
   SafeAreaView,
   Text,
 } from "react-native";
-import { StatusBar } from "expo-status-bar"
-import { useColorScheme } from '@/hooks/useColorScheme';
-import {
-  Banner,
-  Divider,
-} from "react-native-paper";
+import { StatusBar } from "expo-status-bar";
+import { useColorScheme } from "@/hooks/useColorScheme";
+import { Banner, Divider } from "react-native-paper";
 import FeatureCard from "@/components/FeatureCard";
 import { Ionicons } from "@expo/vector-icons";
-import {router} from "expo-router";
+import { router } from "expo-router";
 const Home = () => {
   const [bannerVisible, setBannerVisible] = React.useState(true);
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar style="auto" />
       <View style={styles.header}>
-        <Text style={styles.headerTitle}>
-          Pronóstico Marítimo
-        </Text>
-        <Text style={styles.headerSubtitle}>
-          Información oceánica de Chile
-        </Text>
+        <Text style={styles.headerTitle}>Pronóstico Marítimo</Text>
+        <Text style={styles.headerSubtitle}>Información oceánica de Chile</Text>
       </View>
       <Banner
         visible={bannerVisible}
@@ -57,9 +50,7 @@ const Home = () => {
       </Banner>
       <ScrollView style={styles.content} showsVerticalScrollIndicator={false}>
         <View style={styles.featuredSection}>
-          <Text style={styles.sectionTitle}>
-            Servicios de Pronóstico
-          </Text>
+          <Text style={styles.sectionTitle}>Servicios de Pronóstico</Text>
           <Text style={styles.sectionDescription}>
             Explora nuestros diferentes servicios de pronóstico marítimo para la
             costa chilena
@@ -70,6 +61,13 @@ const Home = () => {
             icon="ChartSpline"
             gradient={["#26A69A", "#00796B"]}
             onPress={() => router.push("/po")}
+          />
+          <FeatureCard
+            title="Categorías"
+            description="Explora material educativo como folletos y videos animados diseñados para mejorar tu comprensión del pronóstico marítimo."
+            icon="FolderOpen"
+            gradient={["#8E24AA", "#6A1B9A"]}
+            onPress={() => router.push("/Categorias")}
           />
           <FeatureCard
             title="Aproximación Costera"
@@ -83,14 +81,12 @@ const Home = () => {
             description="Aquí encontrarás el pronóstico de oleaje para los próximos 7 días en las principales bahías. Este pronóstico, calculado a una profundidad de 20 metros, indica cómo será el comportamiento del oleaje en la costa."
             icon="Waves"
             gradient={["#FF7043", "#F4511E"]}
-            onPress={ () => router.push("/pg") }
+            onPress={() => router.push("/pg")}
           />
         </View>
 
         <View style={styles.infoSection}>
-          <Text  style={styles.infoTitle}>
-            Información Adicional
-          </Text>
+          <Text style={styles.infoTitle}>Información Adicional</Text>
           <Divider style={styles.divider} />
 
           <TouchableOpacity style={styles.infoItem}>
@@ -119,9 +115,7 @@ const Home = () => {
               style={styles.infoIcon}
             />
             <View style={styles.infoContent}>
-              <Text style={styles.infoItemTitle}>
-                Preguntas frecuentes
-              </Text>
+              <Text style={styles.infoItemTitle}>Preguntas frecuentes</Text>
               <Text style={styles.infoItemDescription}>
                 Respuestas a las dudas más comunes
               </Text>
@@ -137,9 +131,7 @@ const Home = () => {
               style={styles.infoIcon}
             />
             <View style={styles.infoContent}>
-              <Text style={styles.infoItemTitle}>
-                Contacto
-              </Text>
+              <Text style={styles.infoItemTitle}>Contacto</Text>
               <Text style={styles.infoItemDescription}>
                 Ponte en contacto con nuestro equipo
               </Text>
