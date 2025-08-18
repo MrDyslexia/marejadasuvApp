@@ -17,7 +17,6 @@ const PronosticoOceanico = ({ regions }: { regions: Region[] }) => {
   const closeModal = () => {
     setSelectedRegion(null);
     setModalVisible(false);
-    
   };
 
   return (

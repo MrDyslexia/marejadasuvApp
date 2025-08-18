@@ -1,8 +1,15 @@
-import { Modal, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import { Image } from 'expo-image';
-import { Ionicons } from '@expo/vector-icons';
-import type { Region } from '@/types/type';
-import { router } from 'expo-router';
+import {
+  Modal,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
+import { Image } from "expo-image";
+import { Ionicons } from "@expo/vector-icons";
+import type { Region } from "@/types/type";
+import { router } from "expo-router";
 const RegionDetailModal = ({
   visible,
   region,
@@ -21,45 +28,60 @@ const RegionDetailModal = ({
     espectro: "Espectro",
   };
   const expandedImage = (image: string) => {
-    router.push({
-      pathname: '/img_expand',
-      params: { expandedImage: image },
-    });
+    // Cerrar el modal ANTES de navegar
+    onClose();
+    // Pequeño delay para asegurar que el modal se cierre
+    setTimeout(() => {
+      router.push({
+        pathname: "/img_expand",
+        params: { expandedImage: image },
+      });
+    }, 100);
   };
   type AttributeKey = keyof typeof attributeNames;
 
   return (
-      <Modal animationType="slide" transparent={false} visible={visible} onRequestClose={onClose}>
-        <View style={styles.modalContainer}>
-          <View style={styles.modalHeader}>
-            <TouchableOpacity onPress={onClose} style={styles.closeButton}>
-              <Ionicons name="close" size={24} color="#000" />
-            </TouchableOpacity>
-            <Text style={styles.modalTitle}>{region.nombre}</Text>
-            <Text style={styles.detailsTitle}>Datos de Pronóstico</Text>
-            <Text style={styles.modalSubtitle}>
-              Lat: {region.lat}° | Lon: {region.lon}°
-            </Text>
-          </View>
-
-          <ScrollView style={styles.modalContent} showsVerticalScrollIndicator={false}>
-            <View style={styles.detailsContainer}>
-              {(Object.keys(attributeNames) as AttributeKey[]).map((key) => (
-                <View key={key} style={styles.detailItem}>
-                  <Text style={styles.detailLabel}>{attributeNames[key]}</Text>
-                  <TouchableOpacity onPress={() => expandedImage(region.datosPronostico[key])}>
-                    <Image 
-                      source={{ uri: region.datosPronostico[key] }} 
-                      style={styles.detailImage} 
-                      contentFit="contain" 
-                    />
-                  </TouchableOpacity>
-                </View>
-              ))}
-            </View>
-          </ScrollView>
+    <Modal
+      animationType="slide"
+      transparent={false}
+      visible={visible}
+      onRequestClose={onClose}
+    >
+      <View style={styles.modalContainer}>
+        <View style={styles.modalHeader}>
+          <TouchableOpacity onPress={onClose} style={styles.closeButton}>
+            <Ionicons name="close" size={24} color="#000" />
+          </TouchableOpacity>
+          <Text style={styles.modalTitle}>{region.nombre}</Text>
+          <Text style={styles.detailsTitle}>Datos de Pronóstico</Text>
+          <Text style={styles.modalSubtitle}>
+            Lat: {region.lat}° | Lon: {region.lon}°
+          </Text>
         </View>
-      </Modal>
+
+        <ScrollView
+          style={styles.modalContent}
+          showsVerticalScrollIndicator={false}
+        >
+          <View style={styles.detailsContainer}>
+            {(Object.keys(attributeNames) as AttributeKey[]).map((key) => (
+              <View key={key} style={styles.detailItem}>
+                <Text style={styles.detailLabel}>{attributeNames[key]}</Text>
+                <TouchableOpacity
+                  onPress={() => expandedImage(region.datosPronostico[key])}
+                >
+                  <Image
+                    source={{ uri: region.datosPronostico[key] }}
+                    style={styles.detailImage}
+                    contentFit="contain"
+                  />
+                </TouchableOpacity>
+              </View>
+            ))}
+          </View>
+        </ScrollView>
+      </View>
+    </Modal>
   );
 };
 
@@ -128,24 +150,24 @@ const styles = StyleSheet.create({
   },
   expandedModalBackground: {
     flex: 1,
-    backgroundColor: 'rgba(0,0,0,0.9)',
-    justifyContent: 'center',
-    alignItems: 'center',
+    backgroundColor: "rgba(0,0,0,0.9)",
+    justifyContent: "center",
+    alignItems: "center",
   },
   expandedImageContainer: {
-    width: '95%',
-    height: '80%',
-    position: 'relative',
+    width: "95%",
+    height: "80%",
+    position: "relative",
   },
   expandedImage: {
-    width: '100%',
-    height: '100%',
+    width: "100%",
+    height: "100%",
   },
   closeExpandedButton: {
-    position: 'absolute',
+    position: "absolute",
     top: 20,
     right: 20,
-    backgroundColor: 'rgba(0,0,0,0.5)',
+    backgroundColor: "rgba(0,0,0,0.5)",
     borderRadius: 20,
     padding: 5,
   },
