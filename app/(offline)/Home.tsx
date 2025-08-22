@@ -11,7 +11,7 @@ import {
 import { StatusBar } from "expo-status-bar";
 import { useColorScheme } from "@/hooks/useColorScheme";
 import { Banner, Divider } from "react-native-paper";
-import FeatureCard from "@/components/FeatureCard";
+import FeatureCard from "@/components/ui/FeatureCard";
 import { Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
 const Home = () => {
@@ -20,7 +20,7 @@ const Home = () => {
     <SafeAreaView style={styles.container}>
       <StatusBar style="auto" />
       <View style={styles.header}>
-        <Text style={styles.headerTitle}>Pronóstico Marítimo</Text>
+        <Text style={styles.headerTitle}>Marejadas UV</Text>
         <Text style={styles.headerSubtitle}>Información oceánica de Chile</Text>
       </View>
       <Banner
@@ -52,15 +52,14 @@ const Home = () => {
         <View style={styles.featuredSection}>
           <Text style={styles.sectionTitle}>Servicios de Pronóstico</Text>
           <Text style={styles.sectionDescription}>
-            Explora nuestros diferentes servicios de pronóstico marítimo para la
-            costa chilena
+            Explora nuestros diferentes servicios.
           </Text>
           <FeatureCard
-            title="Pronóstico Oceánico"
+            title="Pronóstico Costero"
             description="Acá encontrarás el pronóstico de oleaje para los próximos 7 días en el Océano Pacífico y las principales ciudades costeras de Chile. Este pronóstico indica el comportamiento esperado en la zona oceánica (lejos de la costa), y puede dar una idea del oleaje esperado en la costa, que dependerá de la orientación de ésta y la dirección de llegada del oleaje."
             icon="ChartSpline"
-            gradient={["#26A69A", "#00796B"]}
-            onPress={() => router.push("/po")}
+            gradient={["#4A90E2", "#5C6BC0"]}
+            onPress={() => router.push("/pc")}
           />
           <FeatureCard
             title="Categorías"
@@ -70,17 +69,10 @@ const Home = () => {
             onPress={() => router.push("/Categorias")}
           />
           <FeatureCard
-            title="Aproximación Costera"
-            description="Acá encontrarás una estimación referencial del pronóstico de oleaje para los próximos 7 días en la costa de cada ciudad costera y sus alrededores, mientras conseguimos hacer un estudio detallado para todo Chile. Cada caso representa el oleaje esperado dependiendo de la orientación a la costa (hacia donde se encuentra abierta), así, dependiendo de la orientación de la costa que te interesa analizar puedes buscar el caso que se aproxime más."
-            icon="TrendingUpDown"
-            gradient={["#4A90E2", "#5C6BC0"]}
-            onPress={() => router.push("/acc")}
-          />
-          <FeatureCard
             title="Pronóstico General"
             description="Aquí encontrarás el pronóstico de oleaje para los próximos 7 días en las principales bahías. Este pronóstico, calculado a una profundidad de 20 metros, indica cómo será el comportamiento del oleaje en la costa."
             icon="Waves"
-            gradient={["#FF7043", "#F4511E"]}
+            gradient={["#26A69A", "#00796B"]}
             onPress={() => router.push("/pg")}
           />
         </View>
@@ -142,7 +134,7 @@ const Home = () => {
 
         <View style={styles.footer}>
           <Text style={styles.footerText}>
-            © 2025 Pronóstico Marítimo Chile
+            © 2025 Marejadas UV
           </Text>
           <Text style={styles.footerText}>
             Desarrollado por el equipo de investigación oceánica

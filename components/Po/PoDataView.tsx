@@ -5,7 +5,7 @@ import InteractiveMap from "@/components/Po/InteractiveMap";
 import AnimatedMap from "@/components/Po/AnimatedMap";
 import RegionDetailModal from "@/components/Po/Modal";
 import RegionList from "@/components/Po/RegionList";
-const PronosticoOceanico = ({ regions }: { regions: Region[] }) => {
+const PronosticoCostero = ({ regions }: { regions: Region[] }) => {
   const [selectedRegion, setSelectedRegion] = useState<Region | null>(null);
   const [modalVisible, setModalVisible] = useState(false);
 
@@ -22,9 +22,9 @@ const PronosticoOceanico = ({ regions }: { regions: Region[] }) => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.headerTitle}>Pronóstico Oceánico</Text>
+        <Text style={styles.headerTitle}>Pronóstico Costero</Text>
         <Text style={styles.headerSubtitle}>
-          En esta sección podrás ver los pronósticos oceánicos.{"\n"}Selecciona una región para ver más detalles.
+          En esta sección podrás ver los pronósticos costeros.{"\n"}Selecciona una región para ver más detalles.
         </Text>
 
       </View>
@@ -68,4 +68,4 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 });
-export default PronosticoOceanico;
+export default PronosticoCostero;

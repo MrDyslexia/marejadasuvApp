@@ -1,12 +1,12 @@
 import { StyleSheet, View } from "react-native"
-import PronosticoOceanico from "@/components/Po/PoDataView"
+import PronosticoCostero from "@/components/Po/PoDataView"
 import type { Region } from "@/types/type"
 import {po} from "@/data/data.json"
 export default function PronosticoOseanicoScreen() {
   const regionesEjemplo: Region[] = po
   return (
     <View style={styles.container}>
-      <PronosticoOceanico regions={regionesEjemplo} />
+      <PronosticoCostero regions={regionesEjemplo} />
     </View>
   )
 }

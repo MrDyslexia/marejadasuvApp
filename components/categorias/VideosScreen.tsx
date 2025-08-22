@@ -100,7 +100,7 @@ export default function VideosScreen({ onBack }: VideosScreenProps) {
             </TouchableOpacity>
 
             <View style={styles.titleGroup}>
-              <Text style={styles.headerTitle}>Galería de GIFs</Text>
+              <Text style={styles.headerTitle}>Marejadas en acción</Text>
               <Text style={styles.headerSubtitle}>
                 Aprende a tu ritmo con nuestras animaciones educativas
               </Text>

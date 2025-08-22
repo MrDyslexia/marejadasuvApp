@@ -84,7 +84,7 @@ const RegionList = ({
   return (
     <View style={styles.regionListContainer}>
       <View style={styles.headerContainer}>
-        <Text style={styles.sectionTitle}>Regiones</Text>
+        <Text style={styles.sectionTitle}>Zonas</Text>
       </View>
 
       <Animated.FlatList
