@@ -61,18 +61,18 @@ const Home = () => {
             onPress={() => router.push("/pc")}
           />
           <FeatureCard
+            title="Pronóstico Oceánico"
+            description="Aquí encontrarás el pronóstico de oleaje para los próximos 7 días en las principales bahías. Este pronóstico, calculado a una profundidad de 20 metros, indica cómo será el comportamiento del oleaje en la costa."
+            icon="Waves"
+            gradient={["#26A69A", "#00796B"]}
+            onPress={() => router.push("/pg")}
+          />
+          <FeatureCard
             title="Categorías"
             description="Explora material educativo como folletos y videos animados diseñados para mejorar tu comprensión del pronóstico marítimo."
             icon="FolderOpen"
             gradient={["#8E24AA", "#6A1B9A"]}
             onPress={() => router.push("/Categorias")}
-          />
-          <FeatureCard
-            title="Pronóstico General"
-            description="Aquí encontrarás el pronóstico de oleaje para los próximos 7 días en las principales bahías. Este pronóstico, calculado a una profundidad de 20 metros, indica cómo será el comportamiento del oleaje en la costa."
-            icon="Waves"
-            gradient={["#26A69A", "#00796B"]}
-            onPress={() => router.push("/pg")}
           />
         </View>
 

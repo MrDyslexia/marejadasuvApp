@@ -5,10 +5,6 @@
       "nombre": "Pronósticos Bahía de Iquique",
       "mapa_pronostico": "http://marejadas.uv.cl/images/SAM/dominios/CL03IQG.gif",
       "mosaico_pronostico": "http://marejadas.uv.cl/images/SAM/mosaicos/CL03IQMO.png",
-      "markers": [
-        { "lat": -20.2167, "lng": -70.1345, "nombre": "Bahía Iquique" },
-        { "lat": -20.2167, "lng": -70.1345, "nombre": "Puerto Iquique" }
-      ],
       "sectores": [
         {
           "id": "CL03IQN01",
@@ -19,6 +15,10 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL03IQN01T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL03IQN01D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL03IQM.png"
+          },
+          "coordenadas": {
+            "lat": -20.2167,
+            "lng": -70.1333
           }
         },
         {
@@ -30,6 +30,10 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL03IQN02T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL03IQN02D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL03IQM.png"
+          },
+          "coordenadas": {
+            "lat": -20.2167,
+            "lng": -70.1333
           }
         },
         {

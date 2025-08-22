@@ -7,7 +7,6 @@ import AnimatedMap from "@/components/Pc/AnimatedMap"
 import RegionDetailModal from "@/components/Pc/Modal"
 import RegionList from "@/components/Pc/RegionList"
 import InteractiveMap_Modal from "@/components/Pc/Map_Modal"
-import { Ship, TreePalm } from "lucide-react-native"
 
 const PronosticoCostero = ({ regions }: { regions: Region[] }) => {
   const [selectedRegion, setSelectedRegion] = useState<Region | null>(null)
