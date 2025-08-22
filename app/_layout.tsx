@@ -48,14 +48,6 @@ export default function RootLayout() {
           }}
         />
         <Stack.Screen
-          name="acc_modal"
-          options={{
-            headerShown: false,
-            presentation: "modal",
-            orientation: "portrait",
-          }}
-        />
-        <Stack.Screen
           name="img_expand"
           options={{
             headerShown: false,
