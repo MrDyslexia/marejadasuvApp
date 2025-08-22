@@ -40,7 +40,7 @@ export default function FolletosScreen({ onBack }: FolletosScreenProps) {
   const expand = (folleto: any, selectedImageIndex: number) => {
     const imageUrls = folleto.imagenes.map((img: any) => img.url)
     router.push({
-      pathname: "/img_expand",
+      pathname: "/img_expand_multiple",
       params: {
         images: JSON.stringify(imageUrls),
         selectedIndex: selectedImageIndex.toString(),

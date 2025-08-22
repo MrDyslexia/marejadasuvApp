@@ -1,49 +1,56 @@
-"use client"
+"use client";
 
-import { StyleSheet, TouchableOpacity, View, Dimensions, ScrollView, Image } from "react-native"
-import ImageViewer from "react-native-image-zoom-viewer"
-import { Ionicons } from "@expo/vector-icons"
-import { useLocalSearchParams, router } from "expo-router"
-import { useState, useEffect, Key } from "react"
-import { AlignCenter } from "lucide-react-native"
+import {
+  StyleSheet,
+  TouchableOpacity,
+  View,
+  Dimensions,
+  ScrollView,
+  Image,
+} from "react-native";
+import ImageViewer from "react-native-image-zoom-viewer";
+import { Ionicons } from "@expo/vector-icons";
+import { useLocalSearchParams, router } from "expo-router";
+import { useState, useEffect, Key } from "react";
+import { AlignCenter } from "lucide-react-native";
 
 const Img_expand = () => {
   const { images, selectedIndex } = useLocalSearchParams<{
-    images: string
-    selectedIndex: string
-  }>()
+    images: string;
+    selectedIndex: string;
+  }>();
+  const initialIndex = selectedIndex ? Number.parseInt(selectedIndex) : 0;
+  const [orientation, setOrientation] = useState<"portrait" | "landscape">(
+    "portrait"
+  );
+  const [currentIndex, setCurrentIndex] = useState(initialIndex);
+  const [showHUD, setShowHUD] = useState(true);
 
-  const [orientation, setOrientation] = useState<"portrait" | "landscape">("portrait")
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const [showHUD, setShowHUD] = useState(true)
+  const imageUrls = JSON.parse(images).map((url: string) => ({ url }));
 
-  const imageUrls = JSON.parse(images).map((url: string) => ({ url }))
-  const initialIndex = selectedIndex ? Number.parseInt(selectedIndex) : 0
   useEffect(() => {
     const updateOrientation = () => {
-      const { width, height } = Dimensions.get("window")
-      setOrientation(width > height ? "landscape" : "portrait")
-    }
+      const { width, height } = Dimensions.get("window");
+      setOrientation(width > height ? "landscape" : "portrait");
+    };
 
-    updateOrientation()
-    const subscription = Dimensions.addEventListener("change", updateOrientation)
+    updateOrientation();
+    const subscription = Dimensions.addEventListener(
+      "change",
+      updateOrientation
+    );
 
-    return () => subscription?.remove()
-  }, [])
-
-  useEffect(() => {
-    setCurrentIndex(initialIndex)
-  }, [initialIndex])
-
+    return () => subscription?.remove();
+  }, []);
   const navigateToImage = (index: number) => {
-    setCurrentIndex(index)
-  }
+    setCurrentIndex(index);
+  };
 
   const toggleHUD = () => {
-    setShowHUD(!showHUD)
-  }
+    setShowHUD(!showHUD);
+  };
 
-  if (!images) return null
+  if (!images) return null;
 
   return (
     <View style={{ flex: 1 }}>
@@ -59,14 +66,19 @@ const Img_expand = () => {
         onClick={toggleHUD}
       />
 
-      <TouchableOpacity style={styles.closeExpandedButton} onPress={() => router.back()}>
+      <TouchableOpacity
+        style={styles.closeExpandedButton}
+        onPress={() => router.back()}
+      >
         <Ionicons name="close" size={30} color="#fff" />
       </TouchableOpacity>
 
       <TouchableOpacity
         style={[
           styles.hudToggleButton,
-          orientation === "landscape" ? styles.hudToggleLandscape : styles.hudTogglePortrait,
+          orientation === "landscape"
+            ? styles.hudToggleLandscape
+            : styles.hudTogglePortrait,
         ]}
         onPress={toggleHUD}
       >
@@ -74,25 +86,45 @@ const Img_expand = () => {
       </TouchableOpacity>
 
       {showHUD && (
-        <View style={[styles.hudContainer, orientation === "landscape" ? styles.hudLandscape : styles.hudPortrait]}>
+        <View
+          style={[
+            styles.hudContainer,
+            orientation === "landscape"
+              ? styles.hudLandscape
+              : styles.hudPortrait,
+          ]}
+        >
           <ScrollView
             horizontal={orientation === "portrait"}
             showsHorizontalScrollIndicator={false}
             showsVerticalScrollIndicator={false}
             contentContainerStyle={
-              orientation === "landscape" ? styles.hudContentVertical : styles.hudContentHorizontal
+              orientation === "landscape"
+                ? styles.hudContentVertical
+                : styles.hudContentHorizontal
             }
           >
             {imageUrls.map((image: { url: any }, index: number) => (
               <TouchableOpacity
                 key={index}
-                style={[styles.thumbnailContainer, currentIndex === index && styles.thumbnailActive]}
+                style={[
+                  styles.thumbnailContainer,
+                  currentIndex === index && styles.thumbnailActive,
+                ]}
                 onPress={() => navigateToImage(index)}
               >
-                <Image source={{ uri: image.url }} style={styles.thumbnail} resizeMode="cover" />
+                <Image
+                  source={{ uri: image.url }}
+                  style={styles.thumbnail}
+                  resizeMode="cover"
+                />
                 {currentIndex === index && (
                   <View style={styles.thumbnailIndicator}>
-                    <Ionicons name="checkmark-circle" size={20} color="#007AFF" />
+                    <Ionicons
+                      name="checkmark-circle"
+                      size={20}
+                      color="#007AFF"
+                    />
                   </View>
                 )}
               </TouchableOpacity>
@@ -101,8 +133,8 @@ const Img_expand = () => {
         </View>
       )}
     </View>
-  )
-}
+  );
+};
 
 const styles = StyleSheet.create({
   closeExpandedButton: {
@@ -149,7 +181,6 @@ const styles = StyleSheet.create({
     width: 100,
     paddingHorizontal: 8,
     paddingVertical: 10,
-
   },
   hudContentHorizontal: {
     alignItems: "center",
@@ -198,6 +229,6 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
   },
-})
+});
 
-export default Img_expand
+export default Img_expand;
