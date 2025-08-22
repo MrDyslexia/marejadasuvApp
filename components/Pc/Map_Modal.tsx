@@ -146,11 +146,10 @@ const InteractiveMap_Modal = ({
             title={region.nombre}
             description="Ver detalles"
             onCalloutPress={() => {
-                onClose();
-                onRegionSelect(region);
-              }}
-          >
-          </Marker>
+              onClose();
+              onRegionSelect(region);
+            }}
+          ></Marker>
         ))}
       </MapView>
 
