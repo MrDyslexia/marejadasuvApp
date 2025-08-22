@@ -68,7 +68,7 @@ const LoginScreen = () => {
           </View>
 
           <View style={styles.header}>
-            <Text style={styles.title}>Bienvenido!!</Text>
+            <Text style={styles.title}>Bienvenido</Text>
             <Text style={styles.subtitle}>Inicia sesión para continuar</Text>
           </View>
 

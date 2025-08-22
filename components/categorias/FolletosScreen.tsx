@@ -40,7 +40,7 @@ export default function FolletosScreen({ onBack }: FolletosScreenProps) {
   const expand = (folleto: any, selectedImageIndex: number) => {
     const imageUrls = folleto.imagenes.map((img: any) => img.url)
     router.push({
-      pathname: "/img_expand_multiple",
+      pathname: "/img_expand",
       params: {
         images: JSON.stringify(imageUrls),
         selectedIndex: selectedImageIndex.toString(),
@@ -88,7 +88,7 @@ export default function FolletosScreen({ onBack }: FolletosScreenProps) {
 
         {/* Icono de carpeta en la esquina */}
         <View style={styles.folderIcon}>
-          <Ionicons name="folder" size={20} color="#f0bc63ff" />
+          <Ionicons name="folder" size={20} color="#f59e0b" />
         </View>
 
         {/* Contador de imágenes */}
@@ -277,14 +277,12 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.1,
     shadowRadius: 4,
     elevation: 2,
-    overflow: "hidden",
   },
 
   previewImage: {
     width: "100%",
     height: "100%",
     borderRadius: 6,
-    resizeMode: "cover",
   },
 
   previewLoadingOverlay: {
@@ -293,7 +291,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     borderRadius: 6,
-    resizeMode: "cover",
   },
 
   folderIcon: {
@@ -301,8 +298,8 @@ const styles = StyleSheet.create({
     top: -6,
     right: 8,
     backgroundColor: "#fff",
-    borderRadius: 8,
-    padding: 4,
+    borderRadius: 6,
+    padding: 2,
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.1,
@@ -322,7 +319,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     paddingHorizontal: 6,
-    zIndex: 2,
+    zIndex: 1,
   },
 
   imageCounterText: {
@@ -359,18 +356,22 @@ const styles = StyleSheet.create({
   imagesGrid: {
     flexDirection: "row",
     flexWrap: "wrap",
-    gap: 12,
+    justifyContent: "space-around",
+    alignItems: "flex-start",
     marginTop: 8,
   },
 
   // Estilos existentes para las imágenes expandidas
-  imageWrapper: { width: (width - 64) / 3 },
+  imageWrapper: {
+    width: (width - 64) / 2 - 8, // Dividir en 2 columnas con margen
+    marginBottom: 12,
+  },
   imageContainer: {
     borderRadius: 12,
     overflow: "hidden",
     backgroundColor: "#f3f4f6",
   },
-  image: { width: "100%", height: 160, borderRadius: 12},
+  image: { width: "100%", height: 160, borderRadius: 12 },
   loadingOverlay: {
     ...StyleSheet.absoluteFillObject,
     backgroundColor: "rgba(248,250,252,0.8)",
