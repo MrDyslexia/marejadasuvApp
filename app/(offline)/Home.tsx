@@ -9,7 +9,6 @@ import {
   Text,
 } from "react-native";
 import { StatusBar } from "expo-status-bar";
-import { useColorScheme } from "@/hooks/useColorScheme";
 import { Banner, Divider } from "react-native-paper";
 import FeatureCard from "@/components/ui/FeatureCard";
 import { Ionicons } from "@expo/vector-icons";

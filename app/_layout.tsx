@@ -55,6 +55,14 @@ export default function RootLayout() {
             orientation: "all",
           }}
         />
+        <Stack.Screen
+          name="img_expand_multiple"
+          options={{
+            headerShown: false,
+            presentation: "modal",
+            orientation: "all",
+          }}
+        />
         <Stack.Screen name="+not-found" />
       </Stack>
       <StatusBar style="auto" />

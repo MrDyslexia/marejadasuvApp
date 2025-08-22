@@ -3,8 +3,6 @@ import { StyleSheet, TouchableOpacity, View } from 'react-native';
 import ImageViewer from 'react-native-image-zoom-viewer';
 import { Ionicons } from '@expo/vector-icons';
 import { useLocalSearchParams, router } from 'expo-router';
-import { SafeAreaView } from 'react-native-safe-area-context';
-
 const Img_expand = () => {
   const { expandedImage } = useLocalSearchParams<{ expandedImage: string }>();
 
