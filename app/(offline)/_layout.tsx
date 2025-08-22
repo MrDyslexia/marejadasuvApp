@@ -54,15 +54,7 @@ export default function TabLayout() {
           title: 'Pronóstico general',
           tabBarIcon: ({ color }) => <TrendingUpDown size={28} color={color} />,
         }}
-      />
-      <Tabs.Screen
-        name="acc"
-        options={{
-          title: 'Aproximaciones costeras',
-          tabBarIcon: ({ color }) => <Waves size={28} color={color} />,
-        }}
-      />    
-      
+      />      
     </Tabs>
   );
 }

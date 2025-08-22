@@ -29,7 +29,7 @@ const Home = () => {
           {
             label: "Iniciar sesión",
             textColor: "white",
-            onPress: () => console.log("Iniciar sesión"),
+            onPress: () => router.push("/"),
             mode: "contained",
           },
           {
