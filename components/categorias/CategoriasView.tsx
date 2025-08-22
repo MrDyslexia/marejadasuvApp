@@ -11,7 +11,8 @@ import {
 } from "react-native";
 import FolletosScreen from "@/components/categorias/FolletosScreen";
 import VideosScreen from "@/components/categorias/VideosScreen";
-
+import TideBackground from "./TideBackground";
+import { BookOpenText, Clapperboard } from "lucide-react-native";
 const { width, height } = Dimensions.get("window");
 
 export default function CategoriesView() {
@@ -37,6 +38,9 @@ export default function CategoriesView() {
           contentContainerStyle={styles.scrollContainer}
           showsVerticalScrollIndicator={false}
         >
+          <View style={StyleSheet.absoluteFill} pointerEvents="none">
+            <TideBackground />
+          </View>
           <View style={styles.container}>
             <View style={styles.headerContainer}>
               <Text style={styles.header}>Explora Nuestras Categorías</Text>
@@ -52,7 +56,7 @@ export default function CategoriesView() {
                 activeOpacity={0.8}
               >
                 <View style={styles.cardIcon}>
-                  <Text style={styles.iconText}>📋</Text>
+                  <BookOpenText size={40} color="#3661a7ff" />
                 </View>
                 <Text style={styles.categoryTitle}>Folletos</Text>
                 <Text style={styles.categoryDescription}>
@@ -69,7 +73,7 @@ export default function CategoriesView() {
                 activeOpacity={0.8}
               >
                 <View style={styles.cardIcon}>
-                  <Text style={styles.iconText}>🎥</Text>
+                  <Clapperboard size={40} color="#3661a7ff" />
                 </View>
                 <Text style={styles.categoryTitle}>Videos</Text>
                 <Text style={styles.categoryDescription}>
@@ -93,7 +97,6 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    backgroundColor: "#f1f5f9",
     paddingHorizontal: width * 0.05, // 5% del ancho
     paddingTop: height * 0.05, // 5% de la altura
     paddingBottom: 40,
