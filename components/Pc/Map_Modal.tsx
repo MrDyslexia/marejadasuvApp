@@ -143,20 +143,13 @@ const InteractiveMap_Modal = ({
               latitude: region.lat,
               longitude: region.lon,
             }}
-            onPress={(e) => handleMarkerPress(e, region)}
-          >
-            <Callout
-              tooltip={false}
-              onPress={() => {
+            title={region.nombre}
+            description="Ver detalles"
+            onCalloutPress={() => {
                 onClose();
                 onRegionSelect(region);
               }}
-            >
-              <View style={styles.calloutContainer}>
-                <Text style={styles.calloutTitle}>{region.nombre}</Text>
-                <Text style={styles.calloutButtonText}>Ver detalles</Text>
-              </View>
-            </Callout>
+          >
           </Marker>
         ))}
       </MapView>
