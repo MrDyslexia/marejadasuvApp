@@ -1,10 +1,10 @@
 import { useState, useEffect, useRef } from "react";
 import { StyleSheet, View, Text, SafeAreaView, ScrollView } from "react-native";
 import type { Region } from "@/types/type";
-import InteractiveMap from "@/components/Po/InteractiveMap";
-import AnimatedMap from "@/components/Po/AnimatedMap";
-import RegionDetailModal from "@/components/Po/Modal";
-import RegionList from "@/components/Po/RegionList";
+import InteractiveMap from "@/components/Pc/InteractiveMap";
+import AnimatedMap from "@/components/Pc/AnimatedMap";
+import RegionDetailModal from "@/components/Pc/Modal";
+import RegionList from "@/components/Pc/RegionList";
 const PronosticoCostero = ({ regions }: { regions: Region[] }) => {
   const [selectedRegion, setSelectedRegion] = useState<Region | null>(null);
   const [modalVisible, setModalVisible] = useState(false);
