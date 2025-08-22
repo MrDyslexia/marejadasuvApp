@@ -1254,8 +1254,8 @@
     {
       "id": "",
       "nombre": "",
-      "lat": 0,
-      "lon": 0,
+      "lat": -22,
+      "lon": -72,
       "datosPronostico": {
         "categoria": "",
         "altura": "",
