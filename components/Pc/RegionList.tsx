@@ -11,12 +11,10 @@ const CARD_WIDTH = width * 0.7
 const RegionList = ({
   regions,
   onRegionSelect,
-  modalVisible
 }: {
   regions: Region[]
   onRegionSelect: (region: Region) => void
   selectedRegionId?: string
-  modalVisible: (visible: boolean) => void
 }) => {
   const [activeIndex, setActiveIndex] = useState(0)
   const scrollX = new Animated.Value(0)
@@ -91,26 +89,16 @@ const RegionList = ({
 
   return (
     <View style={styles.mainContainer}>
-      {/* Header con título y botón */}
+      {/* Header con título y botón */}<View style={styles.regionListContainer}>
       <View style={styles.headerContainer}>
         <View style={styles.titleContainer}>
           <Ionicons name="location" size={24} color="#2196F3" />
           <Text style={styles.sectionTitle}>Zonas Costeras</Text>
         </View>
-        
-        <TouchableOpacity 
-          style={styles.coastalMapButton} 
-          onPress={() => modalVisible(true)}
-        >
-          <View style={styles.mapButtonContent}>
-            <TreePalm size={28} color="#9CA3AF" />
-            <Text style={styles.mapButtonText}>Mapa Costero</Text>
-          </View>
-        </TouchableOpacity>
       </View>
 
       {/* Lista de regiones con scroll horizontal */}
-      <View style={styles.regionListContainer}>
+      
         <Animated.FlatList
           data={regions}
           keyExtractor={(item) => item.id}
@@ -178,7 +166,6 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "center",
     marginBottom: 20,
-    paddingHorizontal: 8,
   },
   titleContainer: {
     flexDirection: "row",
@@ -189,19 +176,6 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     color: "#2c3e50",
     marginLeft: 8,
-  },
-  coastalMapButton: {
-    backgroundColor: "#ffffff",
-    borderWidth: 3,
-    borderColor: "#9CA3AF",
-    borderRadius: 12,
-    paddingVertical: 12,
-    paddingHorizontal: 16,
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
-    elevation: 3,
   },
   mapButtonContent: {
     flexDirection: "row",

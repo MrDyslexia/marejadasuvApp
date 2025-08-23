@@ -159,7 +159,7 @@ const styles = StyleSheet.create({
   },
   headerRow: {
     flexDirection: "row",
-    alignItems: "center",
+    alignItems: "flex-start",
     justifyContent: "space-between",
   },
   headerContent: {
@@ -180,7 +180,7 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-    padding: 12,
+    padding: 8,
     borderRadius: 8,
     backgroundColor: "rgba(255, 255, 255, 0.2)",
   },

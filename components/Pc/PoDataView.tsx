@@ -1,46 +1,65 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { StyleSheet, View, Text, SafeAreaView, ScrollView, TouchableOpacity } from "react-native"
-import type { Region } from "@/types/type"
-import AnimatedMap from "@/components/Pc/AnimatedMap"
-import RegionDetailModal from "@/components/Pc/Modal"
-import RegionList from "@/components/Pc/RegionList"
-import InteractiveMap_Modal from "@/components/Pc/Map_Modal"
+import { useState } from "react";
+import {
+  StyleSheet,
+  View,
+  Text,
+  SafeAreaView,
+  ScrollView,
+  TouchableOpacity,
+} from "react-native";
+import type { Region } from "@/types/type";
+import AnimatedMap from "@/components/Pc/AnimatedMap";
+import RegionDetailModal from "@/components/Pc/Modal";
+import RegionList from "@/components/Pc/RegionList";
+import InteractiveMap_Modal from "@/components/Pc/Map_Modal";
+import { TreePalm } from "lucide-react-native";
 
 const PronosticoCostero = ({ regions }: { regions: Region[] }) => {
-  const [selectedRegion, setSelectedRegion] = useState<Region | null>(null)
-  const [modalVisible, setModalVisible] = useState(false)
-  const [mapVisible, setMapVisible] = useState(false)
+  const [selectedRegion, setSelectedRegion] = useState<Region | null>(null);
+  const [modalVisible, setModalVisible] = useState(false);
+  const [mapVisible, setMapVisible] = useState(false);
 
   const handleRegionSelect = (region: Region) => {
-    setSelectedRegion(region)
-    setModalVisible(true)
-  }
+    setSelectedRegion(region);
+    setModalVisible(true);
+  };
 
   const closeModal = () => {
-    setSelectedRegion(null)
-    setModalVisible(false)
-  }
+    setSelectedRegion(null);
+    setModalVisible(false);
+  };
 
   const closeMapModal = () => {
-    setMapVisible(false)
-  }
+    setMapVisible(false);
+  };
 
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.headerTitle}>Pronóstico Costero</Text>
-        <Text style={styles.headerSubtitle}>
-          En esta sección podrás ver los pronósticos costeros.{"\n"}Selecciona una región para ver más detalles.
-        </Text>
+        <View style={styles.headerRow}>
+          <View style={styles.headerContent}>
+            <Text style={styles.headerTitle}>Pronóstico Costero</Text>
+            <Text style={styles.headerSubtitle}>Selecciona
+            una región para ver más detalles.</Text>
+          </View>
+          <TouchableOpacity style={styles.headerButton} activeOpacity={0.7} onPress={() => setMapVisible(true)}>
+            <TreePalm size={24} color="#fff" />
+            <Text style={styles.headerButtonText}>Ver mapa Costero</Text>
+          </TouchableOpacity>
+        </View>
       </View>
       <ScrollView style={styles.content} showsVerticalScrollIndicator={false}>
-        <RegionList regions={regions} onRegionSelect={handleRegionSelect} modalVisible={setMapVisible} />
+        <RegionList regions={regions} onRegionSelect={handleRegionSelect} />
         <AnimatedMap />
       </ScrollView>
 
-      <RegionDetailModal visible={modalVisible} region={selectedRegion} onClose={closeModal} />
+      <RegionDetailModal
+        visible={modalVisible}
+        region={selectedRegion}
+        onClose={closeModal}
+      />
       <InteractiveMap_Modal
         regions={regions}
         onRegionSelect={handleRegionSelect}
@@ -48,19 +67,50 @@ const PronosticoCostero = ({ regions }: { regions: Region[] }) => {
         onClose={closeMapModal}
       />
     </SafeAreaView>
-  )
-}
+  );
+};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#f5f5f5",
   },
+  coastalMapButton: {
+    backgroundColor: "#ffffff",
+    borderWidth: 3,
+    borderColor: "#9CA3AF",
+    borderRadius: 12,
+    paddingVertical: 12,
+    paddingHorizontal: 16,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 3,
+  },
+  mapButtonContent: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+  },
   header: {
     paddingHorizontal: 16,
     paddingTop: 24,
     paddingBottom: 16,
     backgroundColor: "#2196F3",
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 3,
+  },
+  headerRow: {
+    flexDirection: "row",
+    alignItems: "flex-start",
+    justifyContent: "space-between",
+  },
+  headerContent: {
+    flex: 4, // Changed from flex: 2 to flex: 4 to give title/subtitle 4/5 of the width
   },
   headerTitle: {
     fontSize: 22,
@@ -71,6 +121,21 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: "rgba(255, 255, 255, 0.8)",
     marginTop: 4,
+  },
+  headerButton: {
+    flex: 1, // Keeping flex: 1 so button takes 1/5 of the width (1 out of 5 total flex units)
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    padding: 8,
+    borderRadius: 8,
+    backgroundColor: "rgba(255, 255, 255, 0.2)",
+  },
+  headerButtonText: {
+    color: "#fff",
+    fontSize: 12,
+    fontWeight: "600",
+    marginLeft: 4,
   },
   content: {
     flex: 1,
@@ -140,7 +205,6 @@ const styles = StyleSheet.create({
     fontSize: 14,
     textAlign: "center",
   },
-  
-})
+});
 
-export default PronosticoCostero
+export default PronosticoCostero;
