@@ -1,7 +1,7 @@
-import { Stack, Tabs } from 'expo-router';
+import { Tabs } from 'expo-router';
 import React from 'react';
 import { Platform } from 'react-native';
-import { Home, TrendingUpDown, Waves, ChartSpline, Info, Tags, FolderOpen } from "lucide-react-native";
+import { Home, Waves, ChartSpline, FolderOpen } from "lucide-react-native";
 import { HapticTab } from '@/components/ui/HapticTab';
 import TabBarBackground from '@/components/ui/TabBarBackground';
 import { Colors } from '@/constants/Colors';
@@ -42,16 +42,16 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="pc"
+        name="po"
         options={{
-          title: 'Pronóstico Costero',
+          title: 'Pronóstico Oceánico',
           tabBarIcon: ({ color }) => <ChartSpline size={28} color={color} />,
         }}
       />
       <Tabs.Screen
-        name="pg"
+        name="pc"
         options={{
-          title: 'Pronóstico general',
+          title: 'Pronóstico Costero',
           tabBarIcon: ({ color }) => <Waves size={28} color={color} />,
         }}
       />      

@@ -4,9 +4,7 @@ import { useRef, useState, useEffect } from "react";
 import type { Region } from "@/types/type";
 import MapView, {
   Marker,
-  Callout,
   PROVIDER_GOOGLE,
-  type MarkerPressEvent,
   type MapPressEvent,
 } from "react-native-maps";
 import {
@@ -14,14 +12,10 @@ import {
   Text,
   TouchableOpacity,
   View,
-  Modal,
-  Dimensions,
-  Platform,
-  StatusBar,
+  Modal
 } from "react-native";
+import { StatusBar } from "expo-status-bar";
 import { Ionicons } from "@expo/vector-icons";
-
-const { width, height } = Dimensions.get("window");
 
 const InteractiveMap_Modal = ({
   regions,
@@ -99,11 +93,6 @@ const InteractiveMap_Modal = ({
     }
   }, [visible, mapReady, regions]);
 
-  const handleMarkerPress = (e: MarkerPressEvent, region: Region) => {
-    e.stopPropagation();
-    // The callout will show automatically when marker is pressed
-  };
-
   const handleMapPress = (e: MapPressEvent) => {
     // Map press will automatically hide callouts
   };
@@ -120,6 +109,7 @@ const InteractiveMap_Modal = ({
       onRequestClose={onClose}
       statusBarTranslucent={true}
     >
+      <StatusBar style="auto" hidden />
       <TouchableOpacity onPress={onClose} style={styles.closeButton}>
         <Ionicons name="close" size={24} color="#fff" />
       </TouchableOpacity>
@@ -173,8 +163,6 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "center",
     paddingHorizontal: 16,
-    paddingTop:
-      Platform.OS === "ios" ? 50 : (StatusBar.currentHeight ?? 24) + 16,
     paddingBottom: 16,
     backgroundColor: "#fff",
     borderBottomWidth: 1,

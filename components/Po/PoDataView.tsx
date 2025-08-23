@@ -10,13 +10,14 @@ import {
   TouchableOpacity,
 } from "react-native";
 import type { Region } from "@/types/type";
-import AnimatedMap from "@/components/Pc/AnimatedMap";
-import RegionDetailModal from "@/components/Pc/Modal";
-import RegionList from "@/components/Pc/RegionList";
-import InteractiveMap_Modal from "@/components/Pc/Map_Modal";
-import { Map, TreePalm } from "lucide-react-native";
+import AnimatedMap from "@/components/Po/AnimatedMap";
+import RegionDetailModal from "@/components/Po/Modal";
+import RegionList from "@/components/Po/RegionList";
+import InteractiveMap_Modal from "@/components/Po/Map_Modal";
+import { Map } from "lucide-react-native";
+import { StatusBar } from "expo-status-bar";
 
-const PronosticoCostero = ({ regions }: { regions: Region[] }) => {
+const PronosticoOseanico = ({ regions }: { regions: Region[] }) => {
   const [selectedRegion, setSelectedRegion] = useState<Region | null>(null);
   const [modalVisible, setModalVisible] = useState(false);
   const [mapVisible, setMapVisible] = useState(false);
@@ -37,14 +38,20 @@ const PronosticoCostero = ({ regions }: { regions: Region[] }) => {
 
   return (
     <SafeAreaView style={styles.container}>
+      <StatusBar style="auto" hidden />
       <View style={styles.header}>
         <View style={styles.headerRow}>
           <View style={styles.headerContent}>
             <Text style={styles.headerTitle}>Pronóstico oceánico</Text>
-            <Text style={styles.headerSubtitle}>Selecciona
-            una región para ver más detalles.</Text>
+            <Text style={styles.headerSubtitle}>
+              Selecciona una región para ver más detalles.
+            </Text>
           </View>
-          <TouchableOpacity style={styles.headerButton} activeOpacity={0.7} onPress={() => setMapVisible(true)}>
+          <TouchableOpacity
+            style={styles.headerButton}
+            activeOpacity={0.7}
+            onPress={() => setMapVisible(true)}
+          >
             <Map size={24} color="#fff" />
             <Text style={styles.headerButtonText}>Ver mapa oceánico</Text>
           </TouchableOpacity>
@@ -207,4 +214,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default PronosticoCostero;
+export default PronosticoOseanico;
