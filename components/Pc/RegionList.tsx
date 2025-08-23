@@ -93,7 +93,7 @@ const RegionList = ({
       <View style={styles.headerContainer}>
         <View style={styles.titleContainer}>
           <Ionicons name="location" size={24} color="#2196F3" />
-          <Text style={styles.sectionTitle}>Zonas Costeras</Text>
+          <Text style={styles.sectionTitle}>Zonas oceánicas</Text>
         </View>
       </View>
 

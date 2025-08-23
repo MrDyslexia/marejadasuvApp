@@ -52,7 +52,7 @@ export default function TabLayout() {
         name="pg"
         options={{
           title: 'Pronóstico general',
-          tabBarIcon: ({ color }) => <TrendingUpDown size={28} color={color} />,
+          tabBarIcon: ({ color }) => <Waves size={28} color={color} />,
         }}
       />      
     </Tabs>

@@ -14,7 +14,7 @@ import AnimatedMap from "@/components/Pc/AnimatedMap";
 import RegionDetailModal from "@/components/Pc/Modal";
 import RegionList from "@/components/Pc/RegionList";
 import InteractiveMap_Modal from "@/components/Pc/Map_Modal";
-import { TreePalm } from "lucide-react-native";
+import { Map, TreePalm } from "lucide-react-native";
 
 const PronosticoCostero = ({ regions }: { regions: Region[] }) => {
   const [selectedRegion, setSelectedRegion] = useState<Region | null>(null);
@@ -40,13 +40,13 @@ const PronosticoCostero = ({ regions }: { regions: Region[] }) => {
       <View style={styles.header}>
         <View style={styles.headerRow}>
           <View style={styles.headerContent}>
-            <Text style={styles.headerTitle}>Pronóstico Costero</Text>
+            <Text style={styles.headerTitle}>Pronóstico oceánico</Text>
             <Text style={styles.headerSubtitle}>Selecciona
             una región para ver más detalles.</Text>
           </View>
           <TouchableOpacity style={styles.headerButton} activeOpacity={0.7} onPress={() => setMapVisible(true)}>
-            <TreePalm size={24} color="#fff" />
-            <Text style={styles.headerButtonText}>Ver mapa Costero</Text>
+            <Map size={24} color="#fff" />
+            <Text style={styles.headerButtonText}>Ver mapa oceánico</Text>
           </TouchableOpacity>
         </View>
       </View>

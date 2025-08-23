@@ -5,7 +5,7 @@ import { StatusBar } from "expo-status-bar"
 import data from "@/data/data.json"
 import { router } from "expo-router"
 import type { Pronostico } from "@/types/type"
-import { ChevronRight, MapPin, Waves, Map, Navigation } from "lucide-react-native"
+import { ChevronRight, MapPin, Waves, Map, Navigation, TreePalm } from "lucide-react-native"
 import InteractiveMap_Modal from "@/components/Pg/InteractiveMap_modal"
 const datosEjemplo = {
   pronosticos: data.pronosticos.map((p: any) => ({
@@ -56,12 +56,12 @@ const PronosticoGeneralScreen = () => {
       <View style={styles.header}>
         <View style={styles.headerRow}>
           <View style={styles.headerContent}>
-            <Text style={styles.headerTitle}>Zonas Oceánicas</Text>
-            <Text style={styles.headerSubtitle}>Selecciona un pronostico para ver detalles</Text>
+            <Text style={styles.headerTitle}>Pronóstico costero</Text>
+            <Text style={styles.headerSubtitle}>Selecciona un pronóstico para ver detalles</Text>
           </View>
           <TouchableOpacity style={styles.headerButton} activeOpacity={0.7} onPress={() => setModalVisible(true)}>
-            <Map size={24} color="#fff" />
-            <Text style={styles.headerButtonText}>Ver mapa oceánico</Text>
+            <TreePalm size={24} color="#fff" />
+            <Text style={styles.headerButtonText}>Ver mapa costero</Text>
           </TouchableOpacity>
         </View>
       </View>
