@@ -88,16 +88,8 @@
       "mapa_pronostico": "http://marejadas.uv.cl/images/SAM/dominios/CL04TOG.gif",
       "mosaico_pronostico": "http://marejadas.uv.cl/images/SAM/mosaicos/CL04TOMO.png",
       "markers": [
-        {
-          "lat": -22.0933,
-          "lng": -69.2131,
-          "nombre": "Bahía Tocopilla"
-        },
-        {
-          "lat": -22.0933,
-          "lng": -69.2131,
-          "nombre": "Puerto Tocopilla"
-        }
+        { "lat": -22.0933, "lng": -69.2131, "nombre": "Bahía Tocopilla" },
+        { "lat": -22.0933, "lng": -69.2131, "nombre": "Puerto Tocopilla" }
       ],
       "sectores": [
         {
@@ -109,11 +101,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL04TON01T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL04TON01D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL04TOM.png"
-          },
-          "coordenadas": {
-            "lng": -70.20322587851776,
-            "lat": -22.08549308323115,
-            "alt": 0.0
           }
         },
         {
@@ -125,11 +112,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL04TON02T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL04TON02D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL04TOM.png"
-          },
-          "coordenadas": {
-            "lng": -70.20791935514964,
-            "lat": -22.090336303509,
-            "alt": 0.0
           }
         },
         {
@@ -141,11 +123,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL04TON03T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL04TON03D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL04TOM.png"
-          },
-          "coordenadas": {
-            "lng": -70.22177161561403,
-            "lat": -22.11191248608754,
-            "alt": 0.0
           }
         }
       ]
@@ -156,16 +133,8 @@
       "mapa_pronostico": "http://marejadas.uv.cl/images/SAM/dominios/CL06MJG.gif",
       "mosaico_pronostico": "http://marejadas.uv.cl/images/SAM/mosaicos/CL06MJMO.png",
       "markers": [
-        {
-          "lat": -23.1333,
-          "lng": -70.4167,
-          "nombre": "Bahía Mejillones"
-        },
-        {
-          "lat": -23.1333,
-          "lng": -70.4167,
-          "nombre": "Puerto Mejillones"
-        }
+        { "lat": -23.1333, "lng": -70.4167, "nombre": "Bahía Mejillones" },
+        { "lat": -23.1333, "lng": -70.4167, "nombre": "Puerto Mejillones" }
       ],
       "sectores": [
         {
@@ -177,11 +146,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL06MJN01T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL06MJN01D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL06MJM.png"
-          },
-          "coordenadas": {
-            "lng": -70.2904789724516,
-            "lat": -22.72038931081215,
-            "alt": 0.0
           }
         },
         {
@@ -193,11 +157,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL06MJN02T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL06MJN02D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL06MJM.png"
-          },
-          "coordenadas": {
-            "lng": -70.30578545503339,
-            "lat": -22.91669300784108,
-            "alt": 0.0
           }
         },
         {
@@ -209,11 +168,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL06MJN03T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL06MJN03D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL06MJM.png"
-          },
-          "coordenadas": {
-            "lng": -70.37351919677812,
-            "lat": -23.05178604975985,
-            "alt": 0.0
           }
         },
         {
@@ -225,11 +179,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL06MJN05T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL06MJN05D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL06MJM.png"
-          },
-          "coordenadas": {
-            "lng": -70.41825061955642,
-            "lat": -23.08282952880413,
-            "alt": 0.0
           }
         },
         {
@@ -241,11 +190,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL06MJN04T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL06MJN04D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL06MJM.png"
-          },
-          "coordenadas": {
-            "lng": -70.38872056743328,
-            "lat": -23.06470380600996,
-            "alt": 0.0
           }
         },
         {
@@ -257,11 +201,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL06MJN06T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL06MJN06D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL06MJM.png"
-          },
-          "coordenadas": {
-            "lng": -70.4521674707212,
-            "lat": -23.09235640678492,
-            "alt": 0.0
           }
         }
       ]
@@ -272,66 +211,22 @@
       "mapa_pronostico": "http://marejadas.uv.cl/images/SAM/dominios/CL06ANG.gif",
       "mosaico_pronostico": "http://marejadas.uv.cl/images/SAM/mosaicos/CL06ANMO.png",
       "markers": [
-        {
-          "lat": -23.1333,
-          "lng": -70.4167,
-          "nombre": "Juan López"
-        },
-        {
-          "lat": -23.1333,
-          "lng": -70.4167,
-          "nombre": "La Portada"
-        },
-        {
-          "lat": -23.1333,
-          "lng": -70.4167,
-          "nombre": "La Chimba"
-        },
-        {
-          "lat": -23.1333,
-          "lng": -70.4167,
-          "nombre": "Playa Trocadero"
-        },
-        {
-          "lat": -23.1333,
-          "lng": -70.4167,
-          "nombre": "La Choza"
-        },
-        {
-          "lat": -23.1333,
-          "lng": -70.4167,
-          "nombre": "Parque de los Eventos"
-        },
-        {
-          "lat": -23.1333,
-          "lng": -70.4167,
-          "nombre": "Playa Paraíso"
-        },
-        {
-          "lat": -23.1333,
-          "lng": -70.4167,
-          "nombre": "Puerto de Antofagasta"
-        },
-        {
-          "lat": -23.1333,
-          "lng": -70.4167,
-          "nombre": "Balneario Municipal"
-        },
+        { "lat": -23.1333, "lng": -70.4167, "nombre": "Juan López" },
+        { "lat": -23.1333, "lng": -70.4167, "nombre": "La Portada" },
+        { "lat": -23.1333, "lng": -70.4167, "nombre": "La Chimba" },
+        { "lat": -23.1333, "lng": -70.4167, "nombre": "Playa Trocadero" },
+        { "lat": -23.1333, "lng": -70.4167, "nombre": "La Choza" },
+        { "lat": -23.1333, "lng": -70.4167, "nombre": "Parque de los Eventos" },
+        { "lat": -23.1333, "lng": -70.4167, "nombre": "Playa Paraíso" },
+        { "lat": -23.1333, "lng": -70.4167, "nombre": "Puerto de Antofagasta" },
+        { "lat": -23.1333, "lng": -70.4167, "nombre": "Balneario Municipal" },
         {
           "lat": -23.1333,
           "lng": -70.4167,
           "nombre": "Estadio Militar los Héroes"
         },
-        {
-          "lat": -23.1333,
-          "lng": -70.4167,
-          "nombre": "Ex Camping Municipal"
-        },
-        {
-          "lat": -23.1333,
-          "lng": -70.4167,
-          "nombre": "Puerto Coloso"
-        }
+        { "lat": -23.1333, "lng": -70.4167, "nombre": "Ex Camping Municipal" },
+        { "lat": -23.1333, "lng": -70.4167, "nombre": "Puerto Coloso" }
       ],
       "sectores": [
         {
@@ -343,11 +238,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL06ANN01T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL06ANN01D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL06MJM.png"
-          },
-          "coordenadas": {
-            "lng": -70.52884700369592,
-            "lat": -23.51126119246442,
-            "alt": 0.0
           }
         },
         {
@@ -359,11 +249,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL06ANN02T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL06ANN02D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL06MJM.png"
-          },
-          "coordenadas": {
-            "lng": -70.43401220498913,
-            "lat": -23.51031213478507,
-            "alt": 0.0
           }
         },
         {
@@ -375,11 +260,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL06ANN03T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL06ANN03D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL06MJM.png"
-          },
-          "coordenadas": {
-            "lng": -70.40584405465485,
-            "lat": -23.55146123073694,
-            "alt": 0.0
           }
         },
         {
@@ -391,11 +271,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL06ANN04T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL06ANN04D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL06MJM.png"
-          },
-          "coordenadas": {
-            "lng": -70.40157684258918,
-            "lat": -23.58413757543605,
-            "alt": 0.0
           }
         },
         {
@@ -407,11 +282,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL06ANN05T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL06ANN05D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL06MJM.png"
-          },
-          "coordenadas": {
-            "lng": -70.40388450700259,
-            "lat": -23.59565824396404,
-            "alt": 0.0
           }
         },
         {
@@ -423,11 +293,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL06ANN06T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL06ANN06D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL06MJM.png"
-          },
-          "coordenadas": {
-            "lng": -70.40247526672034,
-            "lat": -23.6299070861088,
-            "alt": 0.0
           }
         },
         {
@@ -439,11 +304,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL06ANN07T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL06ANN07D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL06MJM.png"
-          },
-          "coordenadas": {
-            "lng": -70.40489722853357,
-            "lat": -23.63825677784361,
-            "alt": 0.0
           }
         },
         {
@@ -455,11 +315,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL06ANN08T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL06ANN08D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL06MJM.png"
-          },
-          "coordenadas": {
-            "lng": -70.40892285160116,
-            "lat": -23.65077312242523,
-            "alt": 0.0
           }
         },
         {
@@ -471,11 +326,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL06ANN9T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL06ANN9D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL06MJM.png"
-          },
-          "coordenadas": {
-            "lng": -70.4153760020813,
-            "lat": -23.6692184551152,
-            "alt": 0.0
           }
         },
         {
@@ -487,11 +337,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL06ANN10T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL06ANN10D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL06MJM.png"
-          },
-          "coordenadas": {
-            "lng": -70.4343903581781,
-            "lat": -23.69641571201905,
-            "alt": 0.0
           }
         },
         {
@@ -503,11 +348,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL06ANN11T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL06ANN11D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL06MJM.png"
-          },
-          "coordenadas": {
-            "lng": -70.44744010039625,
-            "lat": -23.73257039018161,
-            "alt": 0.0
           }
         },
         {
@@ -519,11 +359,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL06ANN12T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL06ANN12D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL06MJM.png"
-          },
-          "coordenadas": {
-            "lng": -70.47032112280603,
-            "lat": -23.75577073591684,
-            "alt": 0.0
           }
         }
       ]
@@ -534,71 +369,19 @@
       "mapa_pronostico": "http://marejadas.uv.cl/images/SAM/dominios/CL12COG.gif",
       "mosaico_pronostico": "http://marejadas.uv.cl/images/SAM/mosaicos/CL12COMO.png",
       "markers": [
-        {
-          "lat": 0,
-          "lng": 0,
-          "nombre": "Chañaral de Aceituno"
-        },
-        {
-          "lat": 0,
-          "lng": 0,
-          "nombre": "Punta Choros"
-        },
-        {
-          "lat": 0,
-          "lng": 0,
-          "nombre": "Caleta Totoralillo"
-        },
-        {
-          "lat": 0,
-          "lng": 0,
-          "nombre": "Caleta Hornos"
-        },
-        {
-          "lat": 0,
-          "lng": 0,
-          "nombre": "Punta Teatinos"
-        },
-        {
-          "lat": 0,
-          "lng": 0,
-          "nombre": "El Faro"
-        },
-        {
-          "lat": 0,
-          "lng": 0,
-          "nombre": "Playa cuatro esquinas"
-        },
-        {
-          "lat": 0,
-          "lng": 0,
-          "nombre": "Playa Peñuelas"
-        },
-        {
-          "lat": 0,
-          "lng": 0,
-          "nombre": "Puerto Coquimbo"
-        },
-        {
-          "lat": 0,
-          "lng": 0,
-          "nombre": "Costa sector Pampilla"
-        },
-        {
-          "lat": 0,
-          "lng": 0,
-          "nombre": "Puerto Guayacán"
-        },
-        {
-          "lat": 0,
-          "lng": 0,
-          "nombre": "Playa la Herradura"
-        },
-        {
-          "lat": 0,
-          "lng": 0,
-          "nombre": "Panul"
-        }
+        { "lat": 0, "lng": 0, "nombre": "Chañaral de Aceituno" },
+        { "lat": 0, "lng": 0, "nombre": "Punta Choros" },
+        { "lat": 0, "lng": 0, "nombre": "Caleta Totoralillo" },
+        { "lat": 0, "lng": 0, "nombre": "Caleta Hornos" },
+        { "lat": 0, "lng": 0, "nombre": "Punta Teatinos" },
+        { "lat": 0, "lng": 0, "nombre": "El Faro" },
+        { "lat": 0, "lng": 0, "nombre": "Playa cuatro esquinas" },
+        { "lat": 0, "lng": 0, "nombre": "Playa Peñuelas" },
+        { "lat": 0, "lng": 0, "nombre": "Puerto Coquimbo" },
+        { "lat": 0, "lng": 0, "nombre": "Costa sector Pampilla" },
+        { "lat": 0, "lng": 0, "nombre": "Puerto Guayacán" },
+        { "lat": 0, "lng": 0, "nombre": "Playa la Herradura" },
+        { "lat": 0, "lng": 0, "nombre": "Panul" }
       ],
       "sectores": [
         {
@@ -752,41 +535,13 @@
       "mapa_pronostico": "http://marejadas.uv.cl/images/SAM/dominios/CL12TGG.gif",
       "mosaico_pronostico": "http://marejadas.uv.cl/images/SAM/mosaicos/CL12TGMO.png",
       "markers": [
-        {
-          "lat": 0,
-          "lng": 0,
-          "nombre": "Totoralillo"
-        },
-        {
-          "lat": 0,
-          "lng": 0,
-          "nombre": "Punta Morrillos"
-        },
-        {
-          "lat": 0,
-          "lng": 0,
-          "nombre": "Caleta de Guanaquero"
-        },
-        {
-          "lat": 0,
-          "lng": 0,
-          "nombre": "Bahía de Tongoy"
-        },
-        {
-          "lat": 0,
-          "lng": 0,
-          "nombre": "Caleta de Tongoy"
-        },
-        {
-          "lat": 0,
-          "lng": 0,
-          "nombre": "CEAZA"
-        },
-        {
-          "lat": 0,
-          "lng": 0,
-          "nombre": "Puerto Aldea"
-        }
+        { "lat": 0, "lng": 0, "nombre": "Totoralillo" },
+        { "lat": 0, "lng": 0, "nombre": "Punta Morrillos" },
+        { "lat": 0, "lng": 0, "nombre": "Caleta de Guanaquero" },
+        { "lat": 0, "lng": 0, "nombre": "Bahía de Tongoy" },
+        { "lat": 0, "lng": 0, "nombre": "Caleta de Tongoy" },
+        { "lat": 0, "lng": 0, "nombre": "CEAZA" },
+        { "lat": 0, "lng": 0, "nombre": "Puerto Aldea" }
       ],
       "sectores": [
         {
@@ -874,41 +629,13 @@
       "mapa_pronostico": "http://marejadas.uv.cl/images/SAM/dominios/CL46RNG.gif",
       "mosaico_pronostico": "http://marejadas.uv.cl/images/SAM/mosaicos/CL46RNMO.png",
       "markers": [
-        {
-          "lat": 0,
-          "lng": 0,
-          "nombre": "Hanga Roa"
-        },
-        {
-          "lat": 0,
-          "lng": 0,
-          "nombre": "Hanga Piko"
-        },
-        {
-          "lat": 0,
-          "lng": 0,
-          "nombre": "Motu Nui"
-        },
-        {
-          "lat": 0,
-          "lng": 0,
-          "nombre": "Hanga Vinapu"
-        },
-        {
-          "lat": 0,
-          "lng": 0,
-          "nombre": "Hanga Hotuiti"
-        },
-        {
-          "lat": 0,
-          "lng": 0,
-          "nombre": "Ovahe"
-        },
-        {
-          "lat": 0,
-          "lng": 0,
-          "nombre": "Anakena"
-        }
+        { "lat": 0, "lng": 0, "nombre": "Hanga Roa" },
+        { "lat": 0, "lng": 0, "nombre": "Hanga Piko" },
+        { "lat": 0, "lng": 0, "nombre": "Motu Nui" },
+        { "lat": 0, "lng": 0, "nombre": "Hanga Vinapu" },
+        { "lat": 0, "lng": 0, "nombre": "Hanga Hotuiti" },
+        { "lat": 0, "lng": 0, "nombre": "Ovahe" },
+        { "lat": 0, "lng": 0, "nombre": "Anakena" }
       ],
       "sectores": [
         {
@@ -920,11 +647,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL46RNN01T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL46RNN01D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL46RNM.png"
-          },
-          "coordenadas": {
-            "lng": -109.4380402787539,
-            "lat": -27.14655052532402,
-            "alt": 0.0
           }
         },
         {
@@ -936,11 +658,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL46RNN02T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL46RNN02D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL46RNM.png"
-          },
-          "coordenadas": {
-            "lng": -109.4467834380472,
-            "lat": -27.15274042180053,
-            "alt": 0.0
           }
         },
         {
@@ -952,11 +669,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL46RNN03T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL46RNN03D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL46RNM.png"
-          },
-          "coordenadas": {
-            "lng": -109.4551551896076,
-            "lat": -27.20428355244426,
-            "alt": 0.0
           }
         },
         {
@@ -968,11 +680,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL46RNN04T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL46RNN04D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL46RNM.png"
-          },
-          "coordenadas": {
-            "lng": -109.4010361608546,
-            "lat": -27.17659762646678,
-            "alt": 0.0
           }
         },
         {
@@ -984,11 +691,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL46RNN05T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL46RNN05D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL46RNM.png"
-          },
-          "coordenadas": {
-            "lng": -109.2688062327971,
-            "lat": -27.12876938305943,
-            "alt": 0.0
           }
         },
         {
@@ -1000,11 +702,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL46RNN06T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL46RNN06D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL46RNM.png"
-          },
-          "coordenadas": {
-            "lng": -109.308942522559,
-            "lat": -27.07600430632275,
-            "alt": 0.0
           }
         },
         {
@@ -1016,11 +713,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL46RNN07T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL46RNN07D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL46RNM.png"
-          },
-          "coordenadas": {
-            "lng": -109.3241856283825,
-            "lat": -27.0680632411789,
-            "alt": 0.0
           }
         }
       ]
@@ -1031,16 +723,8 @@
       "mapa_pronostico": "http://marejadas.uv.cl/images/SAM/dominios/CL15QTG.gif",
       "mosaico_pronostico": "http://marejadas.uv.cl/images/SAM/mosaicos/CL15QTMO.png",
       "markers": [
-        {
-          "lat": 0,
-          "lng": 0,
-          "nombre": ""
-        },
-        {
-          "lat": 0,
-          "lng": 0,
-          "nombre": ""
-        }
+        { "lat": 0, "lng": 0, "nombre": "" },
+        { "lat": 0, "lng": 0, "nombre": "" }
       ],
       "sectores": [
         {
@@ -1052,11 +736,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL15QTN01T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL15QTN01D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL15QTM.png"
-          },
-          "coordenadas": {
-            "lng": -71.49747331931395,
-            "lat": -32.70038420965238,
-            "alt": 0.0
           }
         },
         {
@@ -1068,11 +747,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL15QTN02T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL15QTN02D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL15QTM.png"
-          },
-          "coordenadas": {
-            "lng": -71.51203717502538,
-            "lat": -32.72534124652165,
-            "alt": 0.0
           }
         },
         {
@@ -1084,11 +758,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL15QTN03T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL15QTN03D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL15QTM.png"
-          },
-          "coordenadas": {
-            "lng": -71.49711764227523,
-            "lat": -32.75264590060428,
-            "alt": 0.0
           }
         },
         {
@@ -1100,11 +769,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL15QTN04T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL15QTN04D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL15QTM.png"
-          },
-          "coordenadas": {
-            "lng": -71.50635195382199,
-            "lat": -32.76801598680922,
-            "alt": 0.0
           }
         },
         {
@@ -1116,11 +780,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL15QTN05T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL15QTN05D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL15QTM.png"
-          },
-          "coordenadas": {
-            "lng": -71.51418036249595,
-            "lat": -32.77124045545908,
-            "alt": 0.0
           }
         },
         {
@@ -1143,11 +802,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL15QTN07T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL15QTN07D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL15QTM.png"
-          },
-          "coordenadas": {
-            "lng": -71.52141237256218,
-            "lat": -32.77222216235486,
-            "alt": 0.0
           }
         },
         {
@@ -1159,11 +813,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL15QTN08T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL15QTN08D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL15QTM.png"
-          },
-          "coordenadas": {
-            "lng": -71.52583126601293,
-            "lat": -32.7680754222943,
-            "alt": 0.0
           }
         },
         {
@@ -1175,11 +824,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL15QTN09T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL15QTN09D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL15QTM.png"
-          },
-          "coordenadas": {
-            "lng": -71.53240210406113,
-            "lat": -32.76456131302426,
-            "alt": 0.0
           }
         },
         {
@@ -1191,11 +835,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL15QTN10T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL15QTN10D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL15QTM.png"
-          },
-          "coordenadas": {
-            "lng": -71.54400545330466,
-            "lat": -32.77852789161484,
-            "alt": 0.0
           }
         },
         {
@@ -1207,11 +846,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL15QTN11T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL15QTN11D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL15QTM.png"
-          },
-          "coordenadas": {
-            "lng": -71.51739332477788,
-            "lat": -32.76215881556028,
-            "alt": 0.0
           }
         }
       ]
@@ -1222,16 +856,8 @@
       "mapa_pronostico": "http://marejadas.uv.cl/images/SAM/dominios/CL15CCG.gif",
       "mosaico_pronostico": "http://marejadas.uv.cl/images/SAM/mosaicos/CL15CCMO.png",
       "markers": [
-        {
-          "lat": 0,
-          "lng": 0,
-          "nombre": ""
-        },
-        {
-          "lat": 0,
-          "lng": 0,
-          "nombre": ""
-        }
+        { "lat": 0, "lng": 0, "nombre": "" },
+        { "lat": 0, "lng": 0, "nombre": "" }
       ],
       "sectores": [
         {
@@ -1243,11 +869,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL15CCN01T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL15CCN01D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL15CCM.png"
-          },
-          "coordenadas": {
-            "lng": -71.54649968256612,
-            "lat": -32.91260367835188,
-            "alt": 0.0
           }
         },
         {
@@ -1259,11 +880,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL15CCN02T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL15CCN02D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL15CCM.png"
-          },
-          "coordenadas": {
-            "lng": -71.54280269800067,
-            "lat": -32.92349918124191,
-            "alt": 0.0
           }
         },
         {
@@ -1275,11 +891,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL15CCN03T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL15CCN03D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL15CCM.png"
-          },
-          "coordenadas": {
-            "lng": -71.55994872634032,
-            "lat": -32.94343668436882,
-            "alt": 0.0
           }
         }
       ]
@@ -1300,11 +911,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL15SAN01T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL15SAN01D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL15SAM.png"
-          },
-          "coordenadas": {
-            "lng": -71.62606701013425,
-            "lat": -33.58248409101176,
-            "alt": 0.0
           }
         },
         {
@@ -1316,11 +922,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL15SAN02T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL15SAN02D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL15SAM.png"
-          },
-          "coordenadas": {
-            "lng": -71.62591395814688,
-            "lat": -33.58631906709018,
-            "alt": 0.0
           }
         },
         {
@@ -1332,11 +933,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL15SAN03T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL15SAN03D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL15SAM.png"
-          },
-          "coordenadas": {
-            "lng": -71.63341336121034,
-            "lat": -33.59382302288397,
-            "alt": 0.0
           }
         }
       ]
@@ -1347,16 +943,8 @@
       "mapa_pronostico": "http://marejadas.uv.cl/images/SAM/dominios/CL19TAG.gif",
       "mosaico_pronostico": "http://marejadas.uv.cl/images/SAM/mosaicos/CL19TAMO.png",
       "markers": [
-        {
-          "lat": 0,
-          "lng": 0,
-          "nombre": ""
-        },
-        {
-          "lat": 0,
-          "lng": 0,
-          "nombre": ""
-        }
+        { "lat": 0, "lng": 0, "nombre": "" },
+        { "lat": 0, "lng": 0, "nombre": "" }
       ],
       "sectores": [
         {
@@ -1368,11 +956,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL19TAN01T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL19TAN01D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL19TAM.png"
-          },
-          "coordenadas": {
-            "lng": -72.84023031403596,
-            "lat": -36.27126358710302,
-            "alt": 0.0
           }
         },
         {
@@ -1384,11 +967,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL19TAN02T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL19TAN02D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL19TAM.png"
-          },
-          "coordenadas": {
-            "lng": -72.90219654740588,
-            "lat": -36.40131590952724,
-            "alt": 0.0
           }
         },
         {
@@ -1400,11 +978,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL19TAN03T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL19TAN03D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL19TAM.png"
-          },
-          "coordenadas": {
-            "lng": -72.94877600157253,
-            "lat": -36.52008549185336,
-            "alt": 0.0
           }
         },
         {
@@ -1416,11 +989,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL19TAN04T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL19TAN04D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL19TAM.png"
-          },
-          "coordenadas": {
-            "lng": -72.99247413283544,
-            "lat": -36.5930001964697,
-            "alt": 0.0
           }
         },
         {
@@ -1432,11 +1000,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL19TAN05T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL19TAN05D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL19TAM.png"
-          },
-          "coordenadas": {
-            "lng": -72.97855085454796,
-            "lat": -36.62153552507223,
-            "alt": 0.0
           }
         },
         {
@@ -1448,11 +1011,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL19TAN06T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL19TAN06D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL19TAM.png"
-          },
-          "coordenadas": {
-            "lng": -72.9996529607533,
-            "lat": -36.69968605879187,
-            "alt": 0.0
           }
         },
         {
@@ -1464,11 +1022,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL19TAN07T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL19TAN07D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL19TAM.png"
-          },
-          "coordenadas": {
-            "lng": -73.04832386607421,
-            "lat": -36.63800412938809,
-            "alt": 0.0
           }
         },
         {
@@ -1480,11 +1033,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL19TAN08T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL19TAN08D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL19TAM.png"
-          },
-          "coordenadas": {
-            "lng": -73.08853402656909,
-            "lat": -36.69895650980123,
-            "alt": 0.0
           }
         },
         {
@@ -1496,11 +1044,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL19TAN09T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL19TAN09D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL19TAM.png"
-          },
-          "coordenadas": {
-            "lng": -73.14172053631454,
-            "lat": -36.65492937571472,
-            "alt": 0.0
           }
         },
         {
@@ -1512,11 +1055,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL19TAN10T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL19TAN10D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL19TAM.png"
-          },
-          "coordenadas": {
-            "lng": -73.15123250327929,
-            "lat": -36.69220433187855,
-            "alt": 0.0
           }
         },
         {
@@ -1528,11 +1066,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL19TAN11T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL19TAN11D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL19TAM.png"
-          },
-          "coordenadas": {
-            "lng": -73.1540119967978,
-            "lat": -36.73321391845573,
-            "alt": 0.0
           }
         },
         {
@@ -1544,11 +1077,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL19TAN12T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL19TAN12D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL19TAM.png"
-          },
-          "coordenadas": {
-            "lng": -73.17017186550466,
-            "lat": -36.74025973542253,
-            "alt": 0.0
           }
         },
         {
@@ -1560,11 +1088,6 @@
             "periodo": "http://marejadas.uv.cl/images/SAM/periodos/CL19TAN13T.png",
             "direccion": "http://marejadas.uv.cl/images/SAM/direcciones/CL19TAN13D.png",
             "marea": "http://marejadas.uv.cl/images/SAM/mareas/CL19TAM.png"
-          },
-          "coordenadas": {
-            "lng": -73.21425637197183,
-            "lat": -36.77150356351847,
-            "alt": 0.0
           }
         }
       ]
@@ -1624,8 +1147,8 @@
       }
     }
   ],
-  "categorias": {
-    "folletos": [
+  "categorias":{
+    "folletos":[
       {
         "id": "1",
         "nombre": "Categorías de marejadas",
