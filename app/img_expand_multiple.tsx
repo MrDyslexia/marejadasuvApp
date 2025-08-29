@@ -12,7 +12,6 @@ import ImageViewer from "react-native-image-zoom-viewer";
 import { Ionicons } from "@expo/vector-icons";
 import { useLocalSearchParams, router } from "expo-router";
 import { useState, useEffect, Key } from "react";
-import { AlignCenter } from "lucide-react-native";
 
 const Img_expand = () => {
   const { images, selectedIndex } = useLocalSearchParams<{

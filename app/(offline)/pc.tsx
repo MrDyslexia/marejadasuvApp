@@ -17,7 +17,6 @@ import {
   ChevronRight,
   MapPin,
   Waves,
-  Map,
   Navigation,
   TreePalm,
 } from "lucide-react-native";
