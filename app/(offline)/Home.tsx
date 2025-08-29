@@ -132,9 +132,7 @@ const Home = () => {
         </View>
 
         <View style={styles.footer}>
-          <Text style={styles.footerText}>
-            © 2025 Marejadas UV
-          </Text>
+          <Text style={styles.footerText}>© 2025 Marejadas UV</Text>
           <Text style={styles.footerText}>
             Desarrollado por el equipo de investigación oceánica
           </Text>

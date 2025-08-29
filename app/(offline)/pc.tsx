@@ -1,41 +1,58 @@
-"use client"
-import { useState, useEffect } from "react"
-import { View, Text, StyleSheet, FlatList, TouchableOpacity, ActivityIndicator, SafeAreaView } from "react-native"
-import { StatusBar } from "expo-status-bar"
-import data from "@/data/data.json"
-import { router } from "expo-router"
-import type { Pronostico } from "@/types/type"
-import { ChevronRight, MapPin, Waves, Map, Navigation, TreePalm } from "lucide-react-native"
-import InteractiveMap_Modal from "@/components/Pc/InteractiveMap_modal"
+"use client";
+import { useState, useEffect } from "react";
+import {
+  View,
+  Text,
+  StyleSheet,
+  FlatList,
+  TouchableOpacity,
+  ActivityIndicator,
+  SafeAreaView,
+} from "react-native";
+import { StatusBar } from "expo-status-bar";
+import data from "@/data/data.json";
+import { router } from "expo-router";
+import type { Pronostico } from "@/types/type";
+import {
+  ChevronRight,
+  MapPin,
+  Waves,
+  Map,
+  Navigation,
+  TreePalm,
+} from "lucide-react-native";
+import InteractiveMap_Modal from "@/components/Pc/Interactive_map_modal";
 const datosEjemplo = {
   pronosticos: data.pronosticos.map((p: any) => ({
     ...p,
     markers: p.markers ?? [],
   })),
-}
+};
 
 const PronosticoGeneralScreen = () => {
-  const [pronosticos, setPronosticos] = useState<Pronostico[]>([])
-  const [cargando, setCargando] = useState(true)
-  const [modalVisible, setModalVisible] = useState(false)
+  const [pronosticos, setPronosticos] = useState<Pronostico[]>([]);
+  const [cargando, setCargando] = useState(true);
+  const [modalVisible, setModalVisible] = useState(false);
   useEffect(() => {
     setTimeout(() => {
-      setPronosticos(datosEjemplo.pronosticos)
-      setCargando(false)
-    }, 1000)
-  }, [])
+      setPronosticos(datosEjemplo.pronosticos);
+      setCargando(false);
+    }, 1000);
+  }, []);
 
   const navegarADetalle = (pronostico: Pronostico) => {
     router.push({
       pathname: "/pd_modal",
       params: { pronostico: JSON.stringify(pronostico) },
-    })
-  }
+    });
+  };
 
   const calcularCoordenadasDisponibles = (sectores: any[]) => {
-    const sectoresConCoordenadas = sectores.filter((sector) => sector.coordenadas)
-    return sectoresConCoordenadas.length
-  }
+    const sectoresConCoordenadas = sectores.filter(
+      (sector) => sector.coordenadas
+    );
+    return sectoresConCoordenadas.length;
+  };
 
   if (cargando) {
     return (
@@ -43,23 +60,29 @@ const PronosticoGeneralScreen = () => {
         <ActivityIndicator size="large" color="#0066cc" />
         <Text style={styles.textoIndicador}>Cargando pronósticos...</Text>
       </View>
-    )
+    );
   }
 
   const closeMapModal = () => {
-    setModalVisible(false)
-  }
+    setModalVisible(false);
+  };
 
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar style="auto" hidden/>
+      <StatusBar style="auto" hidden />
       <View style={styles.header}>
         <View style={styles.headerRow}>
           <View style={styles.headerContent}>
             <Text style={styles.headerTitle}>Pronóstico costero</Text>
-            <Text style={styles.headerSubtitle}>Selecciona un pronóstico para ver detalles</Text>
+            <Text style={styles.headerSubtitle}>
+              Selecciona un pronóstico para ver detalles
+            </Text>
           </View>
-          <TouchableOpacity style={styles.headerButton} activeOpacity={0.7} onPress={() => setModalVisible(true)}>
+          <TouchableOpacity
+            style={styles.headerButton}
+            activeOpacity={0.7}
+            onPress={() => setModalVisible(true)}
+          >
             <TreePalm size={24} color="#fff" />
             <Text style={styles.headerButtonText}>Ver mapa costero</Text>
           </TouchableOpacity>
@@ -70,7 +93,11 @@ const PronosticoGeneralScreen = () => {
         data={pronosticos}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
-          <TouchableOpacity style={styles.tarjeta} onPress={() => navegarADetalle(item)} activeOpacity={0.7}>
+          <TouchableOpacity
+            style={styles.tarjeta}
+            onPress={() => navegarADetalle(item)}
+            activeOpacity={0.7}
+          >
             <View style={styles.cardHeader}>
               <View style={styles.titleRow}>
                 <Waves size={24} color="#3b82f6" />
@@ -88,7 +115,9 @@ const PronosticoGeneralScreen = () => {
                   <Text style={styles.infoLabel}>Coordenadas</Text>
                   <Text style={styles.infoValue}>
                     {calcularCoordenadasDisponibles(item.sectores) > 0
-                      ? `${calcularCoordenadasDisponibles(item.sectores)}/${item.sectores.length}`
+                      ? `${calcularCoordenadasDisponibles(item.sectores)}/${
+                          item.sectores.length
+                        }`
                       : "Próximamente"}
                   </Text>
                 </View>
@@ -105,7 +134,9 @@ const PronosticoGeneralScreen = () => {
                 ))}
                 {item.sectores.length > 4 && (
                   <View style={styles.sectorChip}>
-                    <Text style={styles.masTexto}>+{item.sectores.length - 4}</Text>
+                    <Text style={styles.masTexto}>
+                      +{item.sectores.length - 4}
+                    </Text>
                   </View>
                 )}
               </View>
@@ -122,13 +153,10 @@ const PronosticoGeneralScreen = () => {
         maxToRenderPerBatch={5}
         windowSize={10}
       />
-      <InteractiveMap_Modal
-        visible={modalVisible}
-        onClose={closeMapModal}
-      />
+      <InteractiveMap_Modal visible={modalVisible} onClose={closeMapModal} />
     </SafeAreaView>
-  )
-}
+  );
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -291,6 +319,6 @@ const styles = StyleSheet.create({
     color: "#3b82f6",
     fontWeight: "600",
   },
-})
+});
 
-export default PronosticoGeneralScreen
+export default PronosticoGeneralScreen;
