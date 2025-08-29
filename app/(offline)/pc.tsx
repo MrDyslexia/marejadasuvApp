@@ -20,7 +20,7 @@ import {
   Navigation,
   TreePalm,
 } from "lucide-react-native";
-import InteractiveMap_Modal from "@/components/Pc/Interactive_map_modal";
+import Interactive_Map_Modal from "@/components/Pc/Interactive_map_modal";
 const datosEjemplo = {
   pronosticos: data.pronosticos.map((p: any) => ({
     ...p,
@@ -152,7 +152,7 @@ const PronosticoGeneralScreen = () => {
         maxToRenderPerBatch={5}
         windowSize={10}
       />
-      <InteractiveMap_Modal visible={modalVisible} onClose={closeMapModal} />
+      <Interactive_Map_Modal visible={modalVisible} onClose={closeMapModal} />
     </SafeAreaView>
   );
 };

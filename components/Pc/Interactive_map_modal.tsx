@@ -9,7 +9,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 const { width, height } = Dimensions.get("window");
 
-const InteractiveMap_Modal = ({
+const Interactive_Map_Modal = ({
   visible,
   onClose,
 }: {
@@ -78,4 +78,4 @@ const styles = StyleSheet.create({
   map: {},
 });
 
-export default InteractiveMap_Modal;
+export default Interactive_Map_Modal;
